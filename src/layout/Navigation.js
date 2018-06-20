@@ -3,46 +3,28 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
 import AccountCircle from "@material-ui/icons/AccountCircle";
-import { Button } from "@material-ui/core";
-
-import logo from "../images/logo.png";
 import styled from "styled-components";
+import LanguageSelector from "./LanguageSelector";
+import NavigationButton from "../components/NavigationButton";
+import Logo from "./Logo";
 
 const styles = theme => ({
-  root: {
-    flexGrow: 1
-  },
-  flex: {
-    flex: 1
-  },
   menuButton: {
     marginLeft: -12,
     marginRight: 20
-  },
+  }
 });
 
-const LogoImg = styled.img`
-  width: 50px;
-  margin-right: 0.5rem;
+const Grower = styled.div`
+  flex: 1;
 `;
-
-const StyledAccountCircle = styled(AccountCircle)`
-  margin-right: 0.3rem;
-`
 
 const StyledAppBar = styled(AppBar)`
   /* box-shadow: none !important; */
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   color: black !important;
-`
-
-const LogoTypography = styled(Typography)`
-  flex: 1;
-  font-family: 'Open Sans Condensed', sans-serif !important;
-  font-size: 1.75rem !important;
-`
+`;
 
 class MenuAppBar extends React.Component {
   state = {
@@ -70,23 +52,16 @@ class MenuAppBar extends React.Component {
       <div className={classes.root}>
         <StyledAppBar position="sticky">
           <Toolbar>
-            <LogoImg src={logo} />
-            <LogoTypography
-              variant="title"
-              color="inherit"
-            >
-              MOOC.fi
-            </LogoTypography>
-            <Button>
-              Change to English
-            </Button>
+            <Grower>
+              <Logo />
+            </Grower>
+            <LanguageSelector />
             {auth && (
               <div>
-                <Button color="default" variant="outlined">
-                  {" "}
-                  <StyledAccountCircle />
+                <NavigationButton color="default" variant="outlined">
+                  <AccountCircle />
                   Henrik Nygren
-                </Button>
+                </NavigationButton>
               </div>
             )}
           </Toolbar>
