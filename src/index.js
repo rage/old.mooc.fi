@@ -1,10 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Router from './Router';
-import registerServiceWorker from './registerServiceWorker';
+import React from "react";
+import { render, hydrate } from "react-dom";
+import Router from "./Router";
+import registerServiceWorker from "./registerServiceWorker";
 
-import 'typeface-roboto';
-import 'typeface-open-sans-condensed';
+import "typeface-roboto";
+import "typeface-open-sans-condensed";
 
-ReactDOM.render(<Router />, document.getElementById('root'));
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+  hydrate(<Router />, rootElement);
+} else {
+  render(<Router />, rootElement);
+}
+
 registerServiceWorker();
