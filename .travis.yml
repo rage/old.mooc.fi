@@ -1,6 +1,10 @@
 language: node_js
 node_js:
 - 9
+cache:
+  pip: true
+  directories:
+  - node_modules
 script: npm run build
 before_deploy:
 - pip install --user awscli
