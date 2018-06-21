@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import EnglishIndex from "./pages/en/Index";
 import { languages, withContext } from "./contexes/LanguageContext";
 
 export default () => (
@@ -12,7 +11,7 @@ export default () => (
       <Route
         exact
         path="/en"
-        component={withContext(EnglishIndex, languages.english)}
+        component={withContext(Index, languages.english)}
       />
     </Fragment>
   </Router>

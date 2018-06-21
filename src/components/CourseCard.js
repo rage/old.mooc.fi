@@ -17,7 +17,8 @@ const StyledButtonBase = styled(ButtonBase)`
 
 const StyledA = styled.a`
   text-decoration: none;
-`
+  width: 345px;
+`;
 
 const StyledCard = styled(Card)`
   width: 345px;
@@ -30,7 +31,7 @@ const StyledCard = styled(Card)`
 const StyledCardMedia = styled(CardMedia)`
   height: 0;
   padding-top: 56.25%;
-  ${props => props.disabled && "filter: opacity(50%);" }
+  ${props => props.disabled && "filter: opacity(50%);"};
 `;
 
 const CourseCard = ({ name, description, image = "", href, disabled }) => (
@@ -42,7 +43,9 @@ const CourseCard = ({ name, description, image = "", href, disabled }) => (
           <Typography gutterBottom variant="headline" component="h2">
             {name}
           </Typography>
-          <Typography component="p">{description}</Typography>
+          <Typography component="p">
+            <div dangerouslySetInnerHTML={{ __html: description }} />
+          </Typography>
         </CardContent>
       </StyledCard>
     </StyledButtonBase>

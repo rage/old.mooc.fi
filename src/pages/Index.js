@@ -3,6 +3,13 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import withLayout from "../layout/withLayout";
 import styled from "styled-components";
+import LanguageContext, { languages } from "../contexes/LanguageContext";
+import {
+  finnishCourses,
+  englishCourses,
+  finnishUpcomingCourses,
+  englishUpcomingCourses
+} from "../constants/CourseConstants";
 
 // import Background from "../images/";
 import Courses from "../components/Courses";
@@ -48,7 +55,6 @@ const Headline = styled.div`
 //   position: relative;
 //   top: 65px;
 // `;
-
 
 const Explanation = styled(Paper)`
   width: 600px;
@@ -114,7 +120,21 @@ class Index extends React.Component {
             <ArrowDropDown /> Aloita oppiminen<ArrowDropDown />
           </CalloutButton>
         </Callout> */}
-        <Courses />
+        <LanguageContext.Consumer>
+          {language => {
+            return(
+            <Courses
+              courses={
+                language === languages.finnish ? finnishCourses : englishCourses
+              }
+              upcomingCourses={
+                language === languages.finnish
+                  ? finnishUpcomingCourses
+                  : englishUpcomingCourses
+              }
+            />
+            )}}
+        </LanguageContext.Consumer>
       </div>
     );
   }
