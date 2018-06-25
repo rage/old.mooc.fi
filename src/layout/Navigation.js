@@ -58,7 +58,11 @@ class MenuAppBar extends React.Component {
             <LanguageSelector />
             {auth && (
               <div>
-                <NavigationButton color="default" variant="outlined">
+                <NavigationButton
+                  to="/account"
+                  color="default"
+                  variant="outlined"
+                >
                   <AccountCircle />
                   Henrik Nygren
                 </NavigationButton>
