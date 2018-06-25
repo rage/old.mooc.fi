@@ -10,23 +10,23 @@ export const englishCourses = [
   {
     name: "Elements of AI",
     description:
-      "Vievätkö robotit työmme? Miten tekoäly muuttaa työelämää seuraavan 10 vuoden aikana? Millainen yhteiskunnallinen vaikutus tekoälyllä on?",
+      "Will robots take our jobs? How will artificial intelligence change our working life in the next 10 years? How will intelligence impact our society?",
     image: AiImage,
     href: "https://www.elementsofai.com/"
   },
   {
-    name: "Object oriented programming with Java, part 1",
+    name: "Programming with Java I",
     description:
-      "Learn the basics of computer programming, algorithms and object-oriented programming using the Java programming language.<br><br>The course includes comprehensive course materials and plenty of programming exercises, each tested using our automatic testing service.",
+      "Learn the basics of computer programming, algorithms and object-oriented programming using the Java programming language.  Tested using our automatic testing service.",
     image: NoIdeaDogImage,
-    href: "http://mooc.fi/courses/2013/programming-part-1/"
+    href: "https://materiaalit.github.io/2013-oo-programming/part1/week-1/"
   },
   {
-    name: "Object oriented programming with Java, part 2",
+    name: "Programming with Java II",
     description:
-      "This course is a direct continuation of the course Object-Oriented Programming with Java, part I (including week numbering). In Part II, we will dwell deeper into the world of object-oriented programming.",
+      "This course is a direct continuation of the course Object-Oriented Programming with Java, part I. In Part II, we will dwell deeper into the world of object-oriented programming.",
     image: NoIdeaDogImage,
-    href: "http://mooc.fi/courses/2013/programming-part-2/"
+    href: "https://materiaalit.github.io/2013-oo-programming/part2/week-7/"
   }
 ];
 

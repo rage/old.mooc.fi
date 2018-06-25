@@ -1,6 +1,5 @@
 import React from "react";
 // import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
 import withLayout from "../layout/withLayout";
 import styled from "styled-components";
 import LanguageContext, { languages } from "../contexes/LanguageContext";
@@ -14,6 +13,8 @@ import {
 // import Background from "../images/";
 import Courses from "../components/Courses";
 import { Paper } from "@material-ui/core";
+import FinnishExplanation from "../components/FinnishExplanation";
+import EnglishExplanation from "../components/EnglishExplanation";
 
 const Headline = styled.div`
   padding: 20rem 0;
@@ -75,44 +76,15 @@ class Index extends React.Component {
             </Tagline>
           </Paper> */}
           <Explanation>
-            <Typography variant="display1">
-              Digitaalista opetusta kaikille
-            </Typography>
-            <p>
-              Tietojenkäsittelytieteessä käynnistyy pian pilottihanke, jossa
-              opiskelupaikan voi saada vuoden aktiivisen opiskelun jälkeen.
-              DEFA-hanke (Digital Education For All) sai opetus- ja
-              kulttuuriministeriöltä 1,5 miljoonan rahoituksen, ja siinä on
-              mukana viisi suomalaista yliopistoa.
-            </p>
-            <p>
-              Ensimmäiset opiskelijat pääsevät kokeilemaan uutta mahdollisuutta
-              jo tulevana lukuvuotena, mutta toiminta käynnistyy täysimääräisenä
-              syksyllä 2019. Hanke jatkuu vuoden 2020 loppuun, jonka jälkeen
-              tehdään päätös jatkosta. Tietojenkäsittelytieteeseen voi tänä
-              aikana hakea myös perinteisin tavoin eli pääsykokeen kautta,
-              ylioppilastodistuksen perusteella tai avoimen yliopiston väylän
-              kautta.
-            </p>
-            <p>
-              Opetus- ja kulttuuriministeriö myönsi avustuksen avoimien
-              tietojenkäsittelytieteen opetuksen kehittämiseen ja joustavien
-              opintopolkujen kehittämiseen eri tarpeisiin. Avoimia
-              tietojenkäsittelytieteen opintoja ei olekaan tarkoitettu
-              pelkästään nuorille, vaan niille voi osallistua kuka tahansa
-              maksutta.
-            </p>
-            <p>
-              – Eri alojen asiantuntijat voivat räätälöidä omaa osaamistaan
-              täydentävän paketin Helsingin yliopiston sekä
-              yhteistyöyliopistojen tarjonnasta, kertoo Lemström.
-            </p>
-            <p>
-              Opetus- ja kulttuuriministeriö myönsi keväällä korkeakouluille
-              lähes 11 miljoonan euron avustukset, joiden tarkoituksena on
-              sujuvoittaa korkeakouluopiskelijoiden opintopolkuja sekä kehittää
-              opintojen sisältöjä.
-            </p>
+            <LanguageContext.Consumer>
+              {language =>
+                language === languages.finnish ? (
+                  <FinnishExplanation />
+                ) : (
+                  <EnglishExplanation />
+                )
+              }
+            </LanguageContext.Consumer>
           </Explanation>
         </Headline>
         {/* <Callout>
@@ -122,18 +94,21 @@ class Index extends React.Component {
         </Callout> */}
         <LanguageContext.Consumer>
           {language => {
-            return(
-            <Courses
-              courses={
-                language === languages.finnish ? finnishCourses : englishCourses
-              }
-              upcomingCourses={
-                language === languages.finnish
-                  ? finnishUpcomingCourses
-                  : englishUpcomingCourses
-              }
-            />
-            )}}
+            return (
+              <Courses
+                courses={
+                  language === languages.finnish
+                    ? finnishCourses
+                    : englishCourses
+                }
+                upcomingCourses={
+                  language === languages.finnish
+                    ? finnishUpcomingCourses
+                    : englishUpcomingCourses
+                }
+              />
+            );
+          }}
         </LanguageContext.Consumer>
       </div>
     );
