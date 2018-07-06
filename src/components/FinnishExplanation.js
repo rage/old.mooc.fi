@@ -1,36 +1,20 @@
 import React, { Fragment } from "react";
 import Typography from "@material-ui/core/Typography";
+import FinnishExplanationBannerItems from "./FinnishExplanationBannerItems";
 
 export default () => (
   <Fragment>
     <Typography variant="display1">
-      Laadukkaita, kaikilla avoimia ja ilmaisia kursseja Helsingin yliopistolta
+      Laadukkaita, avoimia ja ilmaisia verkkokursseja kaikille
     </Typography>
     <p>
-      Tietojenkäsittelytieteessä käynnistyy pian pilottihanke, jossa
-      opiskelupaikan voi saada vuoden aktiivisen opiskelun jälkeen. DEFA-hanke
-      (Digital Education For All) sai opetus- ja kulttuuriministeriöltä 1,5
-      miljoonan rahoituksen, ja siinä on mukana viisi suomalaista yliopistoa.
+      Helsingin yliopiston tietojenkäsittelytieteen osasto tarjoaa avoimia
+      laadukkaita ja ilmaisia verkkokursseja kaikille. Aiheeseen syventyminen ei
+      vaadi ennakkotietoja -- aloittelija voi lähteä liikkeelle Ohjelmoinnin
+      MOOCista tai tekoälyn perusteisiin keskittyvästä Elements of AI
+      -kurssista.
     </p>
-    <p>
-      Ensimmäiset opiskelijat pääsevät kokeilemaan uutta mahdollisuutta jo
-      tulevana lukuvuotena, mutta toiminta käynnistyy täysimääräisenä syksyllä
-      2019. Hanke jatkuu vuoden 2020 loppuun, jonka jälkeen tehdään päätös
-      jatkosta. Tietojenkäsittelytieteeseen voi tänä aikana hakea myös
-      perinteisin tavoin eli pääsykokeen kautta, ylioppilastodistuksen
-      perusteella tai avoimen yliopiston väylän kautta.
-    </p>
-    <p>
-      Opetus- ja kulttuuriministeriö myönsi avustuksen avoimien
-      tietojenkäsittelytieteen opetuksen kehittämiseen ja joustavien
-      opintopolkujen kehittämiseen eri tarpeisiin. Avoimia
-      tietojenkäsittelytieteen opintoja ei olekaan tarkoitettu pelkästään
-      nuorille, vaan niille voi osallistua kuka tahansa maksutta.
-    </p>
-    <p>
-      – Eri alojen asiantuntijat voivat räätälöidä omaa osaamistaan täydentävän
-      paketin Helsingin yliopiston sekä yhteistyöyliopistojen tarjonnasta,
-      kertoo Lemström.
-    </p>
+
+    <FinnishExplanationBannerItems />
   </Fragment>
 );
