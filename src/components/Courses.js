@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
-import Typography from "@material-ui/core/Typography";
 import styled from "styled-components";
 import CourseCard from "../components/CourseCard";
 
 import LanguageContext, { languages } from "../contexes/LanguageContext";
+import Header from "./Header";
 
 const CoursesWrapper = styled.div`
   padding-top: 5rem;
@@ -19,19 +19,14 @@ const CourseGrid = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
 `;
 
-const StyledTypography = styled(Typography)`
-  text-align: center;
-  margin-bottom: 4rem !important;
-`;
-
 export default ({ courses, upcomingCourses }) => (
   <LanguageContext.Consumer>
     {language => (
       <Fragment>
         <CoursesWrapper>
-          <StyledTypography variant="display2">
+          <Header variant="display2">
             {language === languages.finnish ? "Kurssit" : "Courses"}
-          </StyledTypography>
+          </Header>
           <CourseGrid>
             {courses.map(course => (
               <CourseCard
@@ -44,9 +39,9 @@ export default ({ courses, upcomingCourses }) => (
           </CourseGrid>
         </CoursesWrapper>
         <CoursesWrapper>
-          <StyledTypography variant="display2">
+          <Header variant="display2">
             {language === languages.finnish ? "Tulossa" : "Coming up"}
-          </StyledTypography>
+          </Header>
           <CourseGrid>
             {upcomingCourses.map(course => (
               <CourseCard

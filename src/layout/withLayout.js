@@ -3,6 +3,7 @@ import withRoot from "./withRoot";
 import Navigation from "./Navigation";
 import styled, { injectGlobal } from "styled-components";
 import Footer from "./Footer";
+import MailingListForm from "../components/MailingListForm"
 
 const FOOTER_HEIGHT = 100;
 
@@ -32,7 +33,7 @@ export default Component => {
             <Component />
             <Push />
           </Content>
-
+          <MailingListForm />
           <Footer />
         </Fragment>
       );
