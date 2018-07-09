@@ -1,9 +1,11 @@
 import React, { Fragment } from "react";
 import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
-import Index from "./pages/Index";
 import { languages, withContext } from "./contexes/LanguageContext";
-import Account from "./pages/Account";
-import Redirector from "./components/Redirector";
+import loadable from "loadable-components";
+
+const Index = loadable(() => import("./pages/Index"));
+const Account = loadable(() => import("./pages/Account"));
+const Redirector = loadable(() => import("./pages/Redirector"));
 
 export default () => (
   <Router>
