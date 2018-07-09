@@ -7,7 +7,7 @@ import MoocIcon from "@material-ui/icons/Book";
 import DefaIcon from "@material-ui/icons/LocationCity";
 import TeacherIcon from "@material-ui/icons/People";
 
-const Explanation = styled.p`
+const Explanation = styled.div`
   padding: 0.6rem 0;
 `;
 

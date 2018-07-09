@@ -9,7 +9,7 @@ class FancyExpansionPanel extends React.Component {
   render() {
     return (
       <Wrapper>
-        {this.props.items.map(item => <ExpansionPanelItem item={item} />)}
+        {this.props.items.map(item => <ExpansionPanelItem key={item.title} item={item} />)}
       </Wrapper>
     );
   }

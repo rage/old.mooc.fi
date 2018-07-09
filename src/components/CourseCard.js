@@ -44,7 +44,7 @@ const CourseCard = ({ name, description, image = "", href, disabled }) => (
             {name}
           </Typography>
           <Typography component="p">
-            <div dangerouslySetInnerHTML={{ __html: description }} />
+            {description}
           </Typography>
         </CardContent>
       </StyledCard>

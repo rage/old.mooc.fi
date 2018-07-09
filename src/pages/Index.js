@@ -10,41 +10,12 @@ import {
   englishUpcomingCourses
 } from "../constants/CourseConstants";
 
-// import Background from "../images/";
 import Courses from "../components/Courses";
 import { Paper } from "@material-ui/core";
 import FinnishExplanation from "../components/FinnishExplanation";
 import EnglishExplanation from "../components/EnglishExplanation";
 
 import BannerBackground from "../components/BannerBackground";
-
-// const CalloutButton = styled(Button)`
-//   text-transform: uppercase !important;
-//   background-color: white !important;
-//   position: relative;
-//   top: 70px;
-//   svg {
-//     vertical-align: middle;
-//     position: relative;
-//     top: -1px;
-//   }
-// `;
-
-// const Callout = styled.div`
-//   text-align: center;
-//   margin-bottom: 2rem;
-// `;
-
-// const StartLearningCanvas = styled(Paper)`
-//   width: 300px !important;
-//   height: 70px !important;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   margin: 0 auto;
-//   position: relative;
-//   top: 65px;
-// `;
 
 const Explanation = styled(Paper)`
   width: 600px;
@@ -70,11 +41,6 @@ class Index extends React.Component {
             }
           </LanguageContext.Consumer>
         </Explanation>
-        {/* <Callout>
-          <CalloutButton variant="raised">
-            <ArrowDropDown /> Aloita oppiminen<ArrowDropDown />
-          </CalloutButton>
-        </Callout> */}
         <LanguageContext.Consumer>
           {language => {
             return (

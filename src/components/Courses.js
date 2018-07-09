@@ -30,6 +30,7 @@ export default ({ courses, upcomingCourses }) => (
           <CourseGrid>
             {courses.map(course => (
               <CourseCard
+                key={course.name}
                 name={course.name}
                 description={course.description}
                 image={course.image}
@@ -45,6 +46,7 @@ export default ({ courses, upcomingCourses }) => (
           <CourseGrid>
             {upcomingCourses.map(course => (
               <CourseCard
+                key={course.name}
                 name={course.name}
                 description={course.description}
                 image={course.image}

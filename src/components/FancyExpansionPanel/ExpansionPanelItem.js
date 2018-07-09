@@ -26,7 +26,7 @@ const Card = styled(ButtonBase)`
 `;
 
 const LongDescription = styled.div`
-  max-height: ${props => props.x}px;
+  max-height: var(--max-height);
   overflow: hidden;
   padding: 0 1.85rem;
   margin-top: 0.5rem;
@@ -63,14 +63,19 @@ export default class ExpansionPanelItem extends React.Component {
         <Header>
           <Icon />
           <Heading theme="this.props.theme">{item.title}</Heading>
-          <StyledExpandMoreIcon expanded={this.state.expanded} />
+          <StyledExpandMoreIcon
+            expanded={this.state.expanded ? "1" : undefined}
+          />
         </Header>
         <ShortDescription>
           <Typography>{item.shortDescription}</Typography>
         </ShortDescription>
         <Motion style={{ x: spring(this.state.expanded ? 100 : 0) }}>
           {({ x }) => (
-            <LongDescription x={x} expanded={this.state.expanded}>
+            <LongDescription
+              style={{ "--max-height": `${x}px` }}
+              expanded={this.state.expanded ? "1" : undefined}
+            >
               <Typography>{item.longDescription}</Typography>
             </LongDescription>
           )}
