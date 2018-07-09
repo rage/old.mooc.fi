@@ -1,13 +1,11 @@
 import React from "react";
-import Input from "@material-ui/core/Input";
-import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
 import MailingListSubscribeButton from "./MailingListSubscribeButton";
 import styled from "styled-components";
 import Header from "./Header";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
-import { Typography } from "@material-ui/core";
+import { Typography, TextField } from "@material-ui/core";
 import SentimentSatisfiedIcon from "@material-ui/icons/SentimentSatisfied";
 import LanguageContext, { languages } from "../contexes/LanguageContext";
 
@@ -32,7 +30,7 @@ const StyledHeader = styled(Header)`
   margin-bottom: 2rem !important;
 `;
 
-const StyledInput = styled(Input)`
+const StyledTextField = styled(TextField)`
   width: 23rem;
 `;
 
@@ -63,14 +61,16 @@ class MailingListForm extends React.Component {
           <FormControl>
             <LanguageContext.Consumer>
               {language => (
-                <InputLabel>
-                  {language === languages.finnish
-                    ? "Sähköpostiosoite"
-                    : "Email address"}
-                </InputLabel>
+                <StyledTextField
+                  label={
+                    language === languages.finnish
+                      ? "Sähköpostiosoite"
+                      : "Email address"
+                  }
+                  name="EMAIL"
+                />
               )}
             </LanguageContext.Consumer>
-            <StyledInput name="EMAIL" />
           </FormControl>
           <MailingListSubscribeButton
             onClick={() => {
