@@ -1,36 +1,58 @@
 import React, { Fragment } from "react";
 import Typography from "@material-ui/core/Typography";
+import styled from "styled-components";
+import FancyExpansionPanel from "./FancyExpansionPanel";
+
+import MoocIcon from "@material-ui/icons/Book";
+import DefaIcon from "@material-ui/icons/LocationCity";
+import TeacherIcon from "@material-ui/icons/People";
+
+const Explanation = styled.div`
+  padding: 0.6rem 0;
+`;
 
 export default () => (
   <Fragment>
     <Typography variant="display1">
       High-quality, open, and free courses from University of Helsinki
     </Typography>
-    <p>
-      Tietojenkäsittelytieteessä käynnistyy pian pilottihanke, jossa
-      opiskelupaikan voi saada vuoden aktiivisen opiskelun jälkeen. DEFA-hanke
-      (Digital Education For All) sai opetus- ja kulttuuriministeriöltä 1,5
-      miljoonan rahoituksen, ja siinä on mukana viisi suomalaista yliopistoa.
-    </p>
-    <p>
-      Ensimmäiset opiskelijat pääsevät kokeilemaan uutta mahdollisuutta jo
-      tulevana lukuvuotena, mutta toiminta käynnistyy täysimääräisenä syksyllä
-      2019. Hanke jatkuu vuoden 2020 loppuun, jonka jälkeen tehdään päätös
-      jatkosta. Tietojenkäsittelytieteeseen voi tänä aikana hakea myös
-      perinteisin tavoin eli pääsykokeen kautta, ylioppilastodistuksen
-      perusteella tai avoimen yliopiston väylän kautta.
-    </p>
-    <p>
-      Opetus- ja kulttuuriministeriö myönsi avustuksen avoimien
-      tietojenkäsittelytieteen opetuksen kehittämiseen ja joustavien
-      opintopolkujen kehittämiseen eri tarpeisiin. Avoimia
-      tietojenkäsittelytieteen opintoja ei olekaan tarkoitettu pelkästään
-      nuorille, vaan niille voi osallistua kuka tahansa maksutta.
-    </p>
-    <p>
-      – Eri alojen asiantuntijat voivat räätälöidä omaa osaamistaan täydentävän
-      paketin Helsingin yliopiston sekä yhteistyöyliopistojen tarjonnasta,
-      kertoo Lemström.
-    </p>
+    <Explanation>
+      <Typography variant="subheading">
+        Helsingin yliopiston tietojenkäsittelytieteen osasto tarjoaa avoimia
+        laadukkaita ja ilmaisia verkkokursseja kaikille. Aiheeseen syventyminen
+        ei vaadi ennakkotietoja -- aloittelija voi lähteä liikkeelle
+        Ohjelmoinnin MOOCista tai tekoälyn perusteisiin keskittyvästä Elements
+        of AI -kurssista.
+      </Typography>
+    </Explanation>
+
+    <FancyExpansionPanel
+      items={[
+        {
+          title: "Kaikille avoimia kursseja",
+          shortDescription:
+            "Verkko-oppimista parhaillaan. Älä huolehdi kurssimaksuista tai koulumatkoista, vaan opiskele missä sinulle sopii.",
+          longDescription:
+            "MOOCit eli kaikille avoimet verkkokurssit (massive open online course) ovat verkko-oppimista parhaimmillaan. Nimensä mukaisesti kaikki kurssit ovat avoimia, ilmaisia ja verkkopohjaisia. Sinun ei tarvitse huolehtia kurssimaksuista tai koulumatkoista, vaan voit opiskella silloin kun sinulle sopii, missä ikinä oletkin.",
+          icon: MoocIcon
+        },
+        {
+          title: "Ensimmäisen vuoden opinnot kaikille",
+          shortDescription:
+            "Syksyllä 2019 alkava Digital Education for All -hanke tarjoaa uniikin mahdollisuuden opiskella tietojenkäsittelytieteen osaston ensimmäisen vuoden kurssit kotoasi.",
+          longDescription:
+            "Uusin avaus kaikille avoimessa digitaalisessa opetuksessa on syksyllä 2019 alkava Helsingin yliopiston johtama Digital Education for All -hanke. Opetus- ja kulttuuriministeriön rahoittamassa hankkeessa Helsingin yliopisto, Aalto-yliopisto, Jyväskylän yliopisto, Oulun yliopisto ja Turun yliopisto avaa ensimmäisen vuoden tietojenkäsittelytieteen opintojaan kaikille.",
+          icon: DefaIcon
+        },
+        {
+          title: "Opeta kursseja omassa luokassasi",
+          shortDescription:
+            "Opettaja! Saat kurssit omaan luokkaasi omilla pistelistoillasi ja omalla aikataulullasi.",
+          longDescription:
+            "Opettaja! Saat osan kursseistamme ilmaiseksi käyttöön luokkaasi siten, että voit määritellä tehtävien määräajat ymym. Kaikkia kursseja saa käyttää osana opetusta. Katso lisää Opettajalle-sivulta!",
+          icon: TeacherIcon
+        }
+      ]}
+    />
   </Fragment>
 );
