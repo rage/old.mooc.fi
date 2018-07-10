@@ -45,7 +45,7 @@ const CourseCard = ({ name, description, image = "", href, disabled }) => (
           <Typography gutterBottom variant="headline" component="h2">
             {name}
           </Typography>
-          <Typography component="p">
+          <Typography>
             {description}
           </Typography>
         </CardContent>

@@ -27,6 +27,14 @@ const theme = createMuiTheme({
       root: {
         textTransform: "none"
       }
+    },
+    MuiTypography: {
+      body1: {
+        fontSize: "16px",
+      },
+      subheading: {
+        fontSize: "18px",
+      }
     }
   }
 });
