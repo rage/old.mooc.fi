@@ -125,12 +125,7 @@ class TeacherGuide extends React.Component {
           <StyledIcon icon={faPlusSquare} size="3x" />
           <Header variant="display1">Kurssin perustaminen</Header>
           <TextBlock>
-            Aloita luomalla itsellesi käyttäjätunnus sivustolle
-            https://tmc.mooc.fi/. Huomaa, että vaikka olisit aiemmin tehnyt
-            mooc.fi -sivuston kursseja, ei osoitteessa https://tmc.mooc.fi/mooc
-            tehty käyttäjätunnus toimi tässä toisessa palvelussa ainakaan
-            toistaiseksi. Voit halutessasi käyttää käyttäjätunnusta luodessasi
-            samaa nimimerkkiä ja sähköpostia kuin mooc.fi:n TMC-palvelussa.
+            Aloita luomalla itsellesi käyttäjätunnus sivustolle <a href="https://tmc.mooc.fi/">https://tmc.mooc.fi/</a>.
             <br />
             <br />
             Varmista ettei oppilaitoksellesi ole jo luotu organisaatiota. Mikäli
@@ -200,7 +195,7 @@ class TeacherGuide extends React.Component {
             vaatii opettajilta ohjelmointiosaamista.
             <br />
             <br />
-            Suosittelemme opettajille opetuksen tueksi erityisesti Koodiaapista.
+            Suosittelemme opettajille opetuksen tueksi erityisesti <a href="http://koodiaapinen.fi/">Koodiaapista</a>.
             Koodiaapinen kerää ja tarjoaa opettajille suunnattuja resursseja,
             jotka auttavat ohjelmointiopetuksen järjestämisessä. Voit osallistua
             koodiaapisen luomiseen myös itse.
@@ -210,8 +205,7 @@ class TeacherGuide extends React.Component {
           <StyledIcon icon={faComments} size="3x" />
           <Header variant="display1">Ota yhteyttä</Header>
           <TextBlock>
-            Saat meihin parhaiten yhteyden lähettämällä sähköpostia osoitteeseen
-            mooc@cs.helsinki.fi.
+            Saat meihin parhaiten yhteyden lähettämällä sähköpostia osoitteeseen <a href="mailto:mooc@cs.helsinki.fi">mooc@cs.helsinki.fi</a>.
           </TextBlock>
         </ContentBlock>
       </div>
