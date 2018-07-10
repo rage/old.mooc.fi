@@ -70,7 +70,7 @@ export default class ExpansionPanelItem extends React.Component {
         <ShortDescription>
           <Typography>{item.shortDescription}</Typography>
         </ShortDescription>
-        <Motion style={{ x: spring(this.state.expanded ? 100 : 0) }}>
+        <Motion style={{ x: spring(this.state.expanded ? 200 : 0) }}>
           {({ x }) => (
             <LongDescription
               style={{ "--max-height": `${x}px` }}
