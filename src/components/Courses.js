@@ -7,16 +7,18 @@ import Header from "./Header";
 
 const CoursesWrapper = styled.div`
   padding-top: 5rem;
-  width: 100%;
   background-color: white;
+  margin: 0 auto;
 `;
 
 const CourseGrid = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  @media only screen and (min-width: 600px) {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 `;
 
 export default ({ courses, upcomingCourses }) => (

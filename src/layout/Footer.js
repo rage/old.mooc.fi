@@ -8,6 +8,8 @@ const Footer = styled.footer`
   justify-content: center;
   background-color: #202124 !important;
   color: white;
+  padding: 1rem;
+  text-align: center;
 `;
 
 export default () => <Footer>Please consider the environment before printing this footer.</Footer>;

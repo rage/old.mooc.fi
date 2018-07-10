@@ -22,8 +22,9 @@ const MailingList = styled.div`
 
 const StyledCard = styled(Card)`
   min-height: 15rem;
-  min-width: 40rem;
-  padding: 2rem;
+ // min-width: 40rem;
+  padding: 1rem;
+  margin: 0 1rem;
 `;
 
 const StyledHeader = styled(Header)`
@@ -31,7 +32,6 @@ const StyledHeader = styled(Header)`
 `;
 
 const StyledTextField = styled(TextField)`
-  width: 23rem;
 `;
 
 class MailingListForm extends React.Component {

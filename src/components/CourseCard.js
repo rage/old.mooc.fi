@@ -12,16 +12,18 @@ import blue from "@material-ui/core/colors/indigo";
 
 const StyledButtonBase = styled(ButtonBase)`
   color: ${blue[100]} !important;
-  width: 345px;
 `;
 
 const StyledA = styled.a`
   text-decoration: none;
-  width: 345px;
+  max-width: 345px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2rem;
 `;
 
 const StyledCard = styled(Card)`
-  width: 345px;
   &:hover {
     cursor: pointer;
   }

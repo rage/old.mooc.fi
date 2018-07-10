@@ -4,7 +4,6 @@ import NoIdeaDogImage from "../images/no-idea-dog.png";
 import CyberImage from "../images/cyber.png";
 import TiraImage from "../images/tira.png";
 import TilpeImage from "../images/tilpe.png";
-import TilastoImage from "../images/tilasto.png";
 
 export const englishCourses = [
   {
@@ -81,10 +80,5 @@ export const finnishUpcomingCourses = [
     description:
       "Miten internet toimii? Opi miten tietokoneet, puhelimet ja palvelimet keskustelevat verkon yli. Mitä ovat reitittimet ja kytkimet? Opi miten näitä hyödynnetään ohjelmissasi.",
     image: TilpeImage
-  },
-  {
-    name: "Tilastotiede ja R-kieli",
-    description: "Opi tilasto ja R",
-    image: TilastoImage
   }
 ];

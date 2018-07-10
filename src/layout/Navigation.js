@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import AccountCircle from "@material-ui/icons/AccountCircle";
+// import AccountCircle from "@material-ui/icons/AccountCircle";
 import styled from "styled-components";
 import LanguageSelector from "./LanguageSelector";
-import NavigationButton from "../components/NavigationButton";
+// import NavigationButton from "../components/NavigationButton";
 import Logo from "./Logo";
 
 const styles = theme => ({
@@ -46,7 +46,7 @@ class MenuAppBar extends React.Component {
 
   render() {
     const { classes } = this.props;
-    const { auth } = this.state;
+    // const { auth } = this.state;
 
     return (
       <div className={classes.root}>
@@ -56,7 +56,7 @@ class MenuAppBar extends React.Component {
               <Logo />
             </Grower>
             <LanguageSelector />
-            {auth && (
+            {/* {auth && (
               <div>
                 <NavigationButton
                   to="/account"
@@ -67,7 +67,7 @@ class MenuAppBar extends React.Component {
                   Henrik Nygren
                 </NavigationButton>
               </div>
-            )}
+            )} */}
           </Toolbar>
         </StyledAppBar>
       </div>

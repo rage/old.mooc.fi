@@ -18,10 +18,14 @@ import EnglishExplanation from "../components/EnglishExplanation";
 import BannerBackground from "../components/BannerBackground";
 
 const Explanation = styled(Paper)`
-  width: 600px;
+  max-width: 600px;
   z-index: 50;
   padding: 2rem;
-  margin: 10rem;
+  margin: 5rem 0;
+  @media only screen and (min-width: 600px) {
+    margin-top: 10rem;
+    margin-left: 9rem;
+  }
   margin-bottom: 0.1rem;
 `;
 
