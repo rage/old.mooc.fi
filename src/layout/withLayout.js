@@ -3,7 +3,6 @@ import withRoot from "./withRoot";
 import Navigation from "./Navigation";
 import styled, { injectGlobal } from "styled-components";
 import Footer from "./Footer";
-import MailingListForm from "../components/MailingListForm"
 
 const FOOTER_HEIGHT = 100;
 
@@ -16,7 +15,6 @@ injectGlobal`
 
 const Content = styled.div`
   min-height: 100%;
-  margin-bottom: ${FOOTER_HEIGHT}px;
 `;
 
 const Push = styled.div`
@@ -33,7 +31,6 @@ export default Component => {
             <Component />
             <Push />
           </Content>
-          <MailingListForm />
           <Footer />
         </Fragment>
       );

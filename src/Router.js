@@ -6,6 +6,7 @@ import loadable from "loadable-components";
 const Index = loadable(() => import("./pages/Index"));
 const Account = loadable(() => import("./pages/Account"));
 const Redirector = loadable(() => import("./pages/Redirector"));
+const TeacherGuide = loadable(() => import("./pages/TeacherGuide"));
 
 export default () => (
   <Router>
@@ -19,6 +20,7 @@ export default () => (
           component={withContext(Index, languages.english)}
         />
         <Route exact path="/account" component={Account} />
+        <Route exact path="/opettajille" component={TeacherGuide} />
         <Route component={Redirector} />
       </Switch>
     </Fragment>

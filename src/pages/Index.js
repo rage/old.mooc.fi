@@ -16,6 +16,7 @@ import FinnishExplanation from "../components/FinnishExplanation";
 import EnglishExplanation from "../components/EnglishExplanation";
 
 import BannerBackground from "../components/BannerBackground";
+import MailingListForm from "../components/MailingListForm";
 
 const Explanation = styled(Paper)`
   max-width: 600px;
@@ -63,6 +64,7 @@ class Index extends React.Component {
             );
           }}
         </LanguageContext.Consumer>
+        <MailingListForm />
       </div>
     );
   }
