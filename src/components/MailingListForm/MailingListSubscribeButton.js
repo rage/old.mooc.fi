@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@material-ui/core";
 import Send from "@material-ui/icons/Send";
 import styled from "styled-components";
-import LanguageContext, { languages } from "../contexes/LanguageContext";
+import LanguageContext, { languages } from "../../contexes/LanguageContext";
 
 const StyledButton = styled(Button)`
   margin-left: 1rem !important;
