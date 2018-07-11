@@ -5,7 +5,7 @@ import TeacherIcon from "@material-ui/icons/People";
 export const finnishExplanations = {
   headlineContent: "Laadukkaita, avoimia ja ilmaisia verkkokursseja kaikille",
   leadContent:
-    "Helsingin yliopiston tietojenkäsittelytieteen osasto tarjoaa avoimia laadukkaita ja ilmaisia verkkokursseja kaikille. Aiheeseen syventyminen ei vaadi ennakkotietoja -- aloittelija voi lähteä liikkeelle Ohjelmoinnin MOOCista tai tekoälyn perusteisiin keskittyvästä Elements of AI -kurssista.",
+    "Helsingin yliopiston tietojenkäsittelytieteen osasto tarjoaa avoimia laadukkaita ja ilmaisia verkkokursseja kaikille. Aloittelija voi lähteä liikkeelle Ohjelmoinnin MOOCista tai tekoälyn perusteisiin keskittyvästä Elements of AI -kurssista. Osaamistaan päivittävä voi syventyä vaikkapa tietoturvaan tai Fullstack -ohjelmointiin.",
   expansionPanelItems: [
     {
       title: "Kaikille avoimia kursseja",
@@ -18,17 +18,17 @@ export const finnishExplanations = {
     {
       title: "Ensimmäisen vuoden opinnot kaikille",
       shortDescription:
-        "Syksyllä 2019 alkava Digital Education for All -hanke tarjoaa uniikin mahdollisuuden opiskella tietojenkäsittelytieteen osaston ensimmäisen vuoden kurssit kotoasi.",
+        "Digital Education for All -hanke avaa tietojenkäsittelytieteen ensimmäisen vuoden kaikille.",
       longDescription:
-        "Uusin avaus kaikille avoimessa digitaalisessa opetuksessa on syksyllä 2019 alkava Helsingin yliopiston johtama Digital Education for All -hanke. Opetus- ja kulttuuriministeriön rahoittamassa hankkeessa Helsingin yliopisto, Aalto-yliopisto, Jyväskylän yliopisto, Oulun yliopisto ja Turun yliopisto avaa ensimmäisen vuoden tietojenkäsittelytieteen opintojaan kaikille.",
+        "Uusin avaus kaikille avoimessa digitaalisessa opetuksessa on syksyllä 2018 alkava Helsingin yliopiston johtama Digital Education for All -hanke. Opetus- ja kulttuuriministeriön rahoittamassa hankkeessa Helsingin yliopisto, Aalto-yliopisto, Jyväskylän yliopisto, Oulun yliopisto ja Turun yliopisto avaavat ensimmäisen vuoden tietojenkäsittelytieteen opintojaan kaikille.",
       icon: DefaIcon
     },
     {
       title: "Opeta kursseja omassa luokassasi",
       shortDescription:
-        "Opettaja! Saat kurssit omaan luokkaasi omilla pistelistoillasi ja omalla aikataulullasi.",
+        "Opettaja! Haluatko kurssimme luokkaasi omilla pistelistoillasi ja omalla aikataulullasi.",
       longDescription:
-        "Opettaja! Saat osan kursseistamme ilmaiseksi käyttöön luokkaasi siten, että voit määritellä tehtävien määräajat ymym. Kaikkia kursseja saa käyttää osana opetusta. Katso lisää Opettajalle-sivulta!",
+        "Opettaja! Saat osan kursseistamme ilmaiseksi käyttöön luokkaasi siten, että voit määritellä tehtävien määräajat, julkaisuehdot ymym. Kaikkia kurssejamme saa käyttää osana omaa opetustaan. Katso lisää Opettajalle-sivulta!",
       icon: TeacherIcon
     }
   ]
