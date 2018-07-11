@@ -14,14 +14,14 @@ export const englishCourses = [
     href: "https://www.elementsofai.com/"
   },
   {
-    name: "Programming with Java I",
+    name: "2013 Programming with Java I",
     description:
       "Learn the basics of computer programming, algorithms and object-oriented programming using the Java programming language.  Tested using our automatic testing service.",
     image: NoIdeaDogImage,
     href: "https://materiaalit.github.io/2013-oo-programming/part1/week-1/"
   },
   {
-    name: "Programming with Java II",
+    name: "2013 Programming with Java II",
     description:
       "This course is a direct continuation of the course Object-Oriented Programming with Java, part I. In Part II, we will dwell deeper into the world of object-oriented programming.",
     image: NoIdeaDogImage,

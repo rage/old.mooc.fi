@@ -16,14 +16,14 @@ const StyledButtonBase = styled(ButtonBase)`
 
 const StyledA = styled.a`
   text-decoration: none;
-  max-width: 345px;
-  width: 100%;
   margin: 0 auto;
   display: block;
   margin-bottom: 2rem;
 `;
 
 const StyledCard = styled(Card)`
+  height: 400px !important;
+  width: 400px !important;
   &:hover {
     cursor: pointer;
   }
