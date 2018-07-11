@@ -23,7 +23,7 @@ const StyledA = styled.a`
 
 const StyledCard = styled(Card)`
   height: 400px !important;
-  width: 400px !important;
+  width: 390px !important;
   &:hover {
     cursor: pointer;
   }
