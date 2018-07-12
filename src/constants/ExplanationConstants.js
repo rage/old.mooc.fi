@@ -21,15 +21,19 @@ export const finnishExplanations = {
         "Digital Education for All -hanke avaa tietojenkäsittelytieteen ensimmäisen vuoden kaikille.",
       longDescription:
         "Uusin avaus kaikille avoimessa digitaalisessa opetuksessa on syksyllä 2018 alkava Helsingin yliopiston johtama Digital Education for All -hanke. Opetus- ja kulttuuriministeriön rahoittamassa hankkeessa Helsingin yliopisto, Aalto-yliopisto, Jyväskylän yliopisto, Oulun yliopisto ja Turun yliopisto avaavat ensimmäisen vuoden tietojenkäsittelytieteen opintojaan kaikille.",
-      icon: DefaIcon
+      icon: DefaIcon,
+      buttonLink: "http://helsinki.fi/digital-education-for-all",
+      buttonText: "Lisätietoa DEFA:sta"
     },
     {
       title: "Opeta kursseja omassa luokassasi",
       shortDescription:
         "Opettaja! Haluatko kurssimme luokkaasi omilla pistelistoillasi ja omalla aikataulullasi.",
       longDescription:
-        "Opettaja! Saat osan kursseistamme ilmaiseksi käyttöön luokkaasi siten, että voit määritellä tehtävien määräajat, julkaisuehdot ymym. Kaikkia kurssejamme saa käyttää osana omaa opetustaan. Katso lisää Opettajalle-sivulta!",
-      icon: TeacherIcon
+        "Opettaja! Saat osan kursseistamme ilmaiseksi käyttöön luokkaasi siten, että voit määritellä tehtävien määräajat, julkaisuehdot ymym. Kaikkia kurssejamme saa käyttää osana omaa opetustaan. Katso lisää Opettajille-sivulta!",
+      icon: TeacherIcon,
+      buttonLink: "/teachers",
+      buttonText: "Opettajille-sivu"
     }
   ]
 };
@@ -54,7 +58,9 @@ export const englishExplanations = {
         "Teacher! You can have your own courses, with point lists and schedules tailored for you.",
       longDescription:
         "Teacher! You can have some of our courses for your classes for free with some customizations for your needs, for example by setting your own deadlines. For more information, see our teacher's manual!",
-      icon: TeacherIcon
+      icon: TeacherIcon,
+      buttonLink: "/en/teachers",
+      buttonText: "Teacher's manual"
     }
   ]
 };

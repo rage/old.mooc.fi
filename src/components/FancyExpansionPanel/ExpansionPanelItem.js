@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, ButtonBase } from "@material-ui/core";
+import { Typography, Button, ButtonBase } from "@material-ui/core";
 import { Motion, spring } from "react-motion";
 
 import styled from "styled-components";
@@ -19,7 +19,7 @@ const Heading = styled(Typography)`
 
 const Card = styled(ButtonBase)`
   margin-bottom: 2rem;
-  display: initial !important;
+  display: block !important;
   text-align: left !important;
   padding: 1rem !important;
   overflow: hidden;
@@ -30,6 +30,9 @@ const LongDescription = styled.div`
   overflow: hidden;
   padding: 0 1.85rem;
   margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const ShortDescription = styled.div`
@@ -42,9 +45,14 @@ const StyledExpandMoreIcon = styled(ExpandMoreIcon)`
   transform: rotateZ(${props => (props.expanded ? "-180" : "0")}deg);
 `;
 
+const StyledButton = styled(Button)`
+  margin: 1rem !important;
+`;
+
 export default class ExpansionPanelItem extends React.Component {
   state = {
-    expanded: false
+    expanded: false,
+    disableRipple: false
   };
   render() {
     const { item } = this.props;
@@ -54,6 +62,8 @@ export default class ExpansionPanelItem extends React.Component {
     `;
     return (
       <Card
+        component="div"
+        disableRipple={this.state.disableRipple}
         onClick={() =>
           this.setState(prev => {
             return { expanded: !prev.expanded };
@@ -82,6 +92,19 @@ export default class ExpansionPanelItem extends React.Component {
                 expanded={this.state.expanded ? "1" : undefined}
               >
                 <Typography>{item.longDescription}</Typography>
+                {item.buttonLink && (
+                  <StyledButton
+                    variant="contained"
+                    color="primary"
+                    href={item.buttonLink}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      this.setState({disableRipple: true});
+                    }}
+                  >
+                    {item.buttonText}
+                  </StyledButton>
+                )}
               </LongDescription>
             );
           }}
