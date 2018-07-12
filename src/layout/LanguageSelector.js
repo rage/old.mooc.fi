@@ -7,11 +7,11 @@ export default () => (
   <LanguageContext.Consumer>
     {language =>
       language === languages.finnish ? (
-        <NavigationButton to="/en">
+        <NavigationButton to={`/en${window.location.pathname}`}>
           <Language />English version
         </NavigationButton>
       ) : (
-        <NavigationButton to="/">
+        <NavigationButton to={`${window.location.pathname.substring(3, window.location.pathname.length)}`}>
           <Language />Suomenkielinen versio
         </NavigationButton>
       )
