@@ -72,7 +72,7 @@ export const finnishUpcomingCourses = [
   {
     name: "Tietorakenteet ja algoritmit",
     description:
-      "Osaat jo ohjelmoida mutta haluat kehittyä lisää. Opi sunnittelemaan tehokkaita algoritmejä, joilla voit ratkaista kinkkisiä ongelmia salamannopeasti.",
+      "Osaat jo ohjelmoida mutta haluat kehittyä lisää. Opi suunnittelemaan tehokkaita algoritmeja, joilla voit ratkaista kinkkisiä ongelmia salamannopeasti.",
     image: TiraImage
   },
   {
