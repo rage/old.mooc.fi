@@ -40,16 +40,16 @@ export const finnishExplanations = {
 
 export const englishExplanations = {
   headlineContent:
-    "High-quality, open, and free courses from University of Helsinki",
+    "High-quality, open, and free courses for everyone!",
   leadContent:
-    "University of Helsinki's Department of Computer Science offers high quality, free open online courses for everyone. No prior knowledge is required -- beginners can start to learn programming basics from the Object-Oriented Programming with Java course, or start to get familiar with artificial intelligence from the course Elements of AI.",
+    "The courses are offered by University of Helsinki's Department of Computer Science. No prior knowledge is required -- beginners can start to learn programming basics from the Programming with Java course, or start to get familiar with artificial intelligence from the course Elements of AI.",
   expansionPanelItems: [
     {
       title: "Open courses for all",
       shortDescription:
         "Online learning at its best. Don't worry about course fees or trips to learning facilities. Study where it is convenient for you!",
       longDescription:
-        "MOOCs (Massive Online Open Course) are online learning at its best. As per its name, all courses are open, free of charge, and fully available online. No need to worry about course fees or travelling to learning facilities. Just study whenever you want, wherever you are.",
+        "As per their name, MOOCs (Massive Online Open Course) are all open, free of charge, and fully available online.",
       icon: MoocIcon
     },
     {
@@ -57,7 +57,7 @@ export const englishExplanations = {
       shortDescription:
         "Teacher! You can have your own courses, with point lists and schedules tailored for you.",
       longDescription:
-        "Teacher! You can have some of our courses for your classes for free with some customizations for your needs, for example by setting your own deadlines. For more information, see our teacher's manual!",
+        "Some of our courses can be used for your classes for free with some customizations for your needs, for example by setting your own deadlines. For more information, see our teacher's manual!",
       icon: TeacherIcon,
       buttonLink: "/en/teachers",
       buttonText: "Teacher's manual"
