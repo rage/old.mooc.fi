@@ -12,16 +12,18 @@ const CoursesWrapper = styled.div`
 `;
 
 const CourseGrid = styled.div`
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   @media only screen and (min-width: 720px) {
+    width: 80%;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr;
   }
   @media only screen and (min-width: 1100px) {
+    width: 80%;
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
