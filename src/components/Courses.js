@@ -12,8 +12,8 @@ const CoursesWrapper = styled.div`
 `;
 
 const CourseGrid = styled.div`
-  width: 90%;
   margin: 0 auto;
+  width: fit-content;
   justify-content: center;
   align-items: center;
   @media only screen and (min-width: 720px) {

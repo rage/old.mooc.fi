@@ -16,7 +16,6 @@ const StyledButtonBase = styled(ButtonBase)`
 
 const StyledA = styled.a`
   text-decoration: none;
-  margin: 0 auto;
   width: 290px !important;
   @media only screen and (min-width: 400px) {
     width: 350px !important;
