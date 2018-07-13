@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import UHLogo from "../images/uh-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faFacebook, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const StyledIcon = styled(FontAwesomeIcon)`
   color: white;
@@ -48,6 +48,13 @@ export default () => (
         rel="noopener noreferrer"
       >
         <StyledIcon icon={faFacebook} size="3x" />
+      </a>
+      <a
+        href="https://www.youtube.com/channel/UCkHoQ5p9skFdyjrV3_tnUrA"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <StyledIcon icon={faYoutube} size="3x" />
       </a>
     </SocialContainer>
     <div>
