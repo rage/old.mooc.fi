@@ -12,12 +12,20 @@ const CoursesWrapper = styled.div`
 `;
 
 const CourseGrid = styled.div`
-  @media only screen and (min-width: 600px) {
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (min-width: 720px) {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media only screen and (min-width: 1100px) {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1200px;
-    margin: 0 auto;
   }
 `;
 
