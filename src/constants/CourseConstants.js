@@ -18,14 +18,14 @@ export const englishCourses = [
     description:
       "Learn the basics of computer programming, algorithms and object-oriented programming using the Java programming language.  Tested using our automatic testing service.",
     image: NoIdeaDogImage,
-    href: "https://materiaalit.github.io/2013-oo-programming/part1/week-1/"
+    href: "http://moocfi.github.io/courses/2013/programming-part-1/"
   },
   {
     name: "2013 Programming with Java II",
     description:
       "This course is a direct continuation of the course Object-Oriented Programming with Java, part I. In Part II, we will dwell deeper into the world of object-oriented programming.",
     image: NoIdeaDogImage,
-    href: "https://materiaalit.github.io/2013-oo-programming/part2/week-7/"
+    href: "http://moocfi.github.io/courses/2013/programming-part-2/"
   }
 ];
 
@@ -51,14 +51,14 @@ export const finnishCourses = [
     description:
       "Syväsukellus moderniin websovelluskehitykseen — ota haltuusi React, Redux, Node.js ja MongoDB! Pääpaino on Reactilla tehdyissä single page -sovelluksissa.",
     image: FullStackImage,
-    href: "https://fullstackopen.github.io/"
+    href: "http://moocfi.github.io/courses/2018/fullstack/"
   },
   {
     name: "Ohjelmoinnin MOOC",
     description:
       "Ohjelmointia Javalla perusteista lähtien sekä mahdollisuus opinto-oikeuteen. Täydellinen kurssi ohjelmoinnin alkeiden opetteluun. Ei vaadi esitietoja.",
     image: NoIdeaDogImage,
-    href: "https://materiaalit.github.io/ohjelmointi-18/"
+    href: "http://moocfi.github.io/courses/2018/ohjelmoinnin-mooc/"
   }
 ];
 
