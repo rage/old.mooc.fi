@@ -9,6 +9,7 @@ const ExplanationWrapper = styled(Paper)`
   z-index: 50;
   padding: 2rem;
   margin: 5rem 0;
+  margin-top: 15rem;
   @media only screen and (min-width: 600px) {
     margin-top: 10rem;
     margin-left: 9rem;
