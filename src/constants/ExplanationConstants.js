@@ -12,7 +12,7 @@ export const finnishExplanations = {
       shortDescription:
         "Verkko-oppimista parhaillaan. Älä huolehdi kurssimaksuista tai koulumatkoista, vaan opiskele missä sinulle sopii.",
       longDescription:
-        "MOOCit eli kaikille avoimet verkkokurssit (massive open online course) ovat verkko-oppimista parhaimmillaan. Nimensä mukaisesti kaikki kurssit ovat avoimia, ilmaisia ja verkkopohjaisia. Sinun ei tarvitse huolehtia kurssimaksuista tai koulumatkoista, vaan voit opiskella silloin kun sinulle sopii, missä ikinä oletkin.",
+        "MOOCit eli kaikille avoimet verkkokurssit (massive open online course) ovat nimensä mukaisesti kaikki kurssit ovat avoimia, ilmaisia ja verkkopohjaisia.",
       icon: MoocIcon
     },
     {
@@ -20,7 +20,7 @@ export const finnishExplanations = {
       shortDescription:
         "Digital Education for All -hanke avaa tietojenkäsittelytieteen ensimmäisen vuoden kaikille.",
       longDescription:
-        "Uusin avaus kaikille avoimessa digitaalisessa opetuksessa on syksyllä 2018 alkava Helsingin yliopiston johtama Digital Education for All -hanke. Opetus- ja kulttuuriministeriön rahoittamassa hankkeessa Helsingin yliopisto, Aalto-yliopisto, Jyväskylän yliopisto, Oulun yliopisto ja Turun yliopisto avaavat ensimmäisen vuoden tietojenkäsittelytieteen opintojaan kaikille.",
+        "Helsingin yliopiston johtamassa Digital Education for All -hankeeessa myös mukana Aalto-yliopisto, Jyväskylän yliopisto, Oulun yliopisto ja Turun yliopisto.",
       icon: DefaIcon,
       buttonLink: "http://helsinki.fi/digital-education-for-all",
       buttonText: "Lisätietoa DEFA:sta"
@@ -30,7 +30,7 @@ export const finnishExplanations = {
       shortDescription:
         "Opettaja! Haluatko kurssimme luokkaasi omilla pistelistoillasi ja omalla aikataulullasi.",
       longDescription:
-        "Opettaja! Saat osan kursseistamme ilmaiseksi käyttöön luokkaasi siten, että voit määritellä tehtävien määräajat, julkaisuehdot ymym. Kaikkia kurssejamme saa käyttää osana omaa opetustaan. Katso lisää Opettajille-sivulta!",
+        "Kaikkia kurssejamme saa käyttää osana omaa opetustaan. Katso lisää Opettajalle-sivulta!",
       icon: TeacherIcon,
       buttonLink: "/teachers",
       buttonText: "Opettajille-sivu"
