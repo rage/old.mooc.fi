@@ -35,7 +35,14 @@ class MailingListForm extends React.Component {
     super(props);
     this.formRef = React.createRef();
     this.state = { sent: false };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
+
+  handleSubmit() {
+    this.setState({ sent: true });
+  }
+
   render() {
     return (
       <LanguageContext.Consumer>
@@ -49,7 +56,14 @@ class MailingListForm extends React.Component {
                     : "Get notified of new courses"}
                 </StyledHeader>
                 <div>
-                  {this.state.sent ? <ThanksForJoining /> : <FormContent />}
+                  {this.state.sent ? (
+                    <ThanksForJoining />
+                  ) : (
+                    <FormContent
+                      formRef={this.formRef}
+                      handleSubmit={this.handleSubmit}
+                    />
+                  )}
                 </div>
               </CardContent>
             </StyledCard>

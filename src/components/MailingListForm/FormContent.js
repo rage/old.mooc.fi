@@ -7,9 +7,9 @@ import LanguageContext, { languages } from "../../contexes/LanguageContext";
 
 const StyledTextField = styled(TextField)``;
 
-export default () => (
+export default ({ formRef, handleSubmit }) => (
   <form
-    ref={this.formRef}
+    ref={formRef}
     action="https://mooc.us8.list-manage.com/subscribe/post?u=db82662e446284fd41bd8370e&amp;id=46d3d4ede3"
     method="post"
     name="mc-embedded-subscribe-form"
@@ -32,8 +32,8 @@ export default () => (
     </FormControl>
     <MailingListSubscribeButton
       onClick={() => {
-        this.formRef.current.submit();
-        this.setState({ sent: true });
+        formRef.current.submit();
+        handleSubmit();
       }}
     />
   </form>
