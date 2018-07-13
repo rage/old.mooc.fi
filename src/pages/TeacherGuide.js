@@ -65,11 +65,7 @@ class TeacherGuide extends React.Component {
                 <TextBlock>
                   Voit hyödyntää suurinta osaa tarjoamistamme materiaaleista
                   vapaasti. Materiaaleissamme on lähes poikkeuksetta käytetty{" "}
-                  <a
-                    href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi">
                     Creative Commons BY-NC-SA
                   </a>{" "}
                   -lisenssiä, mutta tarkista vielä lisenssi materiaalista.
@@ -247,11 +243,7 @@ class TeacherGuide extends React.Component {
                 <TextBlock>
                   You can utilize most of our materials freely. Most of them are
                   licenced with{" "}
-                  <a
-                    href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">
                     Creative Commons BY-NC-SA
                   </a>{" "}
                   -licence, but check the course materials for confirmation.
