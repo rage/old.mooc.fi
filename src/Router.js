@@ -1,7 +1,11 @@
 import React, { Fragment } from "react";
-import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
+import { Switch, Router, Route } from "react-router-dom";
 import { languages, withContext } from "./contexes/LanguageContext";
 import loadable from "loadable-components";
+import { createBrowserHistory } from "history";
+import initGa from "./util/initGa";
+
+const history = createBrowserHistory();
 
 const Index = loadable(() => import("./pages/Index"));
 const Account = loadable(() => import("./pages/Account"));
@@ -9,8 +13,10 @@ const Redirector = loadable(() => import("./pages/Redirector"));
 const TeacherGuide = loadable(() => import("./pages/TeacherGuide"));
 const NotFoundPage = loadable(() => import("./pages/404"));
 
+initGa(history);
+
 export default () => (
-  <Router>
+  <Router history={history}>
     <Fragment>
       <Switch>
         <Route exact path="/" component={Index} />
