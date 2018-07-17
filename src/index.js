@@ -1,8 +1,8 @@
 import React from "react";
 import { render, hydrate } from "react-dom";
 import { loadComponents, getState } from "loadable-components";
-import Router from "./Router";
 import registerServiceWorker from "./registerServiceWorker";
+import App from "./App";
 
 import "typeface-roboto";
 import "typeface-open-sans-condensed";
@@ -12,10 +12,10 @@ window.snapSaveState = () => getState();
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
   loadComponents().then(() => {
-    hydrate(<Router />, rootElement);
+    hydrate(<App />, rootElement);
   });
 } else {
-  render(<Router />, rootElement);
+  render(<App />, rootElement);
 }
 
 registerServiceWorker();

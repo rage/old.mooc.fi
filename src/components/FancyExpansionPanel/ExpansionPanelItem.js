@@ -5,6 +5,7 @@ import { Motion, spring } from "react-motion";
 import styled from "styled-components";
 import grey from "@material-ui/core/colors/grey";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { trackElementHeight } from "../../util/trackHeight";
 
 const Header = styled.div`
   display: flex;
@@ -26,7 +27,7 @@ const Card = styled(ButtonBase)`
 `;
 
 const LongDescription = styled.div`
-  max-height: var(--max-height);
+  height: calc(var(--open-ratio) * var(--calculated-height) * 1px);
   overflow: hidden;
   padding: 0 1.85rem;
   margin-top: 0.5rem;
@@ -50,10 +51,21 @@ const StyledButton = styled(Button)`
 `;
 
 export default class ExpansionPanelItem extends React.Component {
+  constructor() {
+    super();
+    this.longDescriptionRef = React.createRef();
+  }
+
   state = {
     expanded: false,
     disableRipple: false
   };
+
+  componentDidMount() {
+    const current = this.longDescriptionRef.current;
+    trackElementHeight(current)
+  }
+
   render() {
     const { item } = this.props;
     const Icon = styled(item.icon)`
@@ -80,16 +92,13 @@ export default class ExpansionPanelItem extends React.Component {
         <ShortDescription>
           <Typography>{item.shortDescription}</Typography>
         </ShortDescription>
-        <Motion style={{ x: spring(this.state.expanded ? 1200 : -1300) }}>
-          {({ x }) => {
-            let maxHeight = x;
-            if (x < 0) {
-              maxHeight = 0;
-            }
+        <Motion style={{ openRatio: spring(this.state.expanded ? 1 : 0) }}>
+          {({ openRatio }) => {
             return (
               <LongDescription
-                style={{ "--max-height": `${maxHeight}px` }}
+                style={{ "--open-ratio": `${openRatio}` }}
                 expanded={this.state.expanded ? "1" : undefined}
+                innerRef={this.longDescriptionRef}
               >
                 <Typography>{item.longDescription}</Typography>
                 {item.buttonLink && (
@@ -97,9 +106,9 @@ export default class ExpansionPanelItem extends React.Component {
                     variant="contained"
                     color="primary"
                     href={item.buttonLink}
-                    onClick={(e) => {
+                    onClick={e => {
                       e.stopPropagation();
-                      this.setState({disableRipple: true});
+                      this.setState({ disableRipple: true });
                     }}
                   >
                     {item.buttonText}
