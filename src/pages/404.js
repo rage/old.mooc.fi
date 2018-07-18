@@ -27,13 +27,11 @@ const NotFoundPage = () => (
         <StyledTypography variant="subheading">
           {language === languages.finnish ? (
             <div>
-              Etsimääsi sivua ei ole olemassa, tai se on poistettu.<br />Jos
-              muitakaan sivuja ei löydy, sivusto saattaa olla kaatunut.
+              Etsimääsi sivua ei ole olemassa, tai se on poistettu.
             </div>
           ) : (
             <div>
-              The page you wanted doesn't exist, or it has been deleted.<br />If
-              other pages aren't found either, the website might be down.
+              The page you wanted doesn't exist, or it has been deleted.
             </div>
           )}
         </StyledTypography>
