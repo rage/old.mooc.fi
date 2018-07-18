@@ -19,13 +19,12 @@ export default history => {
     window,
     document,
     "script",
-    "//www.google-analytics.com/analytics.js",
+    "https://www.google-analytics.com/analytics.js",
     "ga"
   );
 
   window.ga("create", "UA-47575342-4", "auto");
   window.ga("set", "anonymizeIp", true);
-  window.ga("require", "linkid", "linkid.js");
   window.ga("require", "displayfeatures");
   window.ga("send", "pageview");
 
