@@ -22,7 +22,7 @@ export const finnishExplanations = {
       longDescription:
         "Helsingin yliopiston johtamassa Digital Education for All -hankeeessa myös mukana Aalto-yliopisto, Jyväskylän yliopisto, Oulun yliopisto ja Turun yliopisto.",
       icon: DefaIcon,
-      buttonLink: "http://helsinki.fi/digital-education-for-all",
+      buttonLink: "https://www.helsinki.fi/fi/projektit/digital-education-for-all",
       buttonText: "Lisätietoa DEFA:sta"
     },
     {
