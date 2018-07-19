@@ -14,5 +14,5 @@ export default ({ location }) => {
   const whereTo = redirects.find(
     redirect => redirect.from === location.pathname
   ).to;
-  return <Redirect to={whereTo} />;
+  window.location = whereTo;
 };
