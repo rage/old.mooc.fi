@@ -58,12 +58,12 @@ export default class ExpansionPanelItem extends React.Component {
 
   state = {
     expanded: false,
-    disableRipple: false
+    disableRipple: false,
   };
 
   componentDidMount() {
     const current = this.longDescriptionRef.current;
-    trackElementHeight(current)
+    trackElementHeight(current);
   }
 
   render() {
@@ -109,6 +109,9 @@ export default class ExpansionPanelItem extends React.Component {
                     onClick={e => {
                       e.stopPropagation();
                       this.setState({ disableRipple: true });
+                      setTimeout(() => {
+                        this.setState({ disableRipple: false });
+                      }, 1000);
                     }}
                   >
                     {item.buttonText}
