@@ -24,6 +24,11 @@ const Card = styled(ButtonBase)`
   text-align: left !important;
   padding: 1rem !important;
   overflow: hidden;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px !important;
+  &:hover {
+    background-color: ${grey[50 ]} !important;
+  }
 `;
 
 const LongDescription = styled.div`
