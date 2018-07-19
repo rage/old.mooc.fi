@@ -27,13 +27,16 @@ const StyledA = styled.a`
 const StyledCard = styled(Card)`
   height: 400px !important;
   width: 290px !important;
+  text-align: left;
+  transition: box-shadow 0.2s;
   @media only screen and (min-width: 400px) {
     width: 350px !important;
   }
   &:hover {
     cursor: pointer;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2),
+      0px 2px 2px 1px rgba(0, 0, 0, 0.14), 0px 3px 1px -1px rgba(0, 0, 0, 0.12);
   }
-  text-align: left;
 `;
 
 const StyledCardMedia = styled(CardMedia)`
@@ -44,16 +47,14 @@ const StyledCardMedia = styled(CardMedia)`
 
 const CourseCard = ({ name, description, image = "", href, disabled }) => (
   <StyledA href={href}>
-    <StyledButtonBase disabled={disabled}>
+    <StyledButtonBase component="div" disabled={disabled}>
       <StyledCard>
         <StyledCardMedia image={image} disabled={disabled} />
         <CardContent>
           <Typography gutterBottom variant="headline" component="h2">
             {name}
           </Typography>
-          <Typography>
-            {description}
-          </Typography>
+          <Typography>{description}</Typography>
         </CardContent>
       </StyledCard>
     </StyledButtonBase>
