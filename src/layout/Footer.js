@@ -3,7 +3,11 @@ import styled from "styled-components";
 
 import UHLogo from "../images/uh-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faFacebook, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import {
+  faTwitter,
+  faFacebook,
+  faYoutube
+} from "@fortawesome/free-brands-svg-icons";
 
 const StyledIcon = styled(FontAwesomeIcon)`
   color: white;
@@ -12,7 +16,6 @@ const StyledIcon = styled(FontAwesomeIcon)`
 `;
 
 const Footer = styled.footer`
-  height: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,6 +32,13 @@ const SocialContainer = styled.div`
 
 const EmailContainer = styled.div`
   padding-top: 2rem;
+`;
+
+const MaintainedContainer = styled.div`
+  padding: 2rem 0;
+  a {
+    color: white;
+  }
 `
 
 export default () => (
@@ -62,5 +72,15 @@ export default () => (
         <img alt="University of Helsinki" src={UHLogo} />
       </a>
     </div>
+    <MaintainedContainer>
+      This site is maintained by the{" "}
+      <a
+        href="https://www.helsinki.fi/en/researchgroups/data-driven-education"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        RAGE research group
+      </a>.
+    </MaintainedContainer>
   </Footer>
 );
