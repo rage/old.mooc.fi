@@ -240,8 +240,56 @@ export const redirects = [
     to: 'http://moocfi.github.io/courses/2013/programming-part-1/material.html'
   },
   {
+    from: '/programming-part1/material/week-1?noredirect=0',
+    to: 'https://materiaalit.github.io/2013-oo-programming/part1/week-1/'
+  },
+  {
+    from: '/programming-part1/material/week-2?noredirect=0',
+    to: 'https://materiaalit.github.io/2013-oo-programming/part1/week-2/'
+  },
+  {
+    from: '/programming-part1/material/week-3?noredirect=0',
+    to: 'https://materiaalit.github.io/2013-oo-programming/part1/week-3/'
+  },
+  {
+    from: '/programming-part1/material/week-4?noredirect=0',
+    to: 'https://materiaalit.github.io/2013-oo-programming/part1/week-4/'
+  },
+  {
+    from: '/programming-part1/material/week-5?noredirect=0',
+    to: 'https://materiaalit.github.io/2013-oo-programming/part1/week-5/'
+  },
+  {
+    from: '/programming-part1/material/week-6?noredirect=0',
+    to: 'https://materiaalit.github.io/2013-oo-programming/part1/week-6/'
+  },
+  {
     from: '/courses/2013/programming-part-2/material.html',
     to: 'http://moocfi.github.io/courses/2013/programming-part-2/material.html'
+  },
+  {
+    from: '/programming-part2/material/week-7?noredirect=0',
+    to: 'https://materiaalit.github.io/2013-oo-programming/part2/week-7/'
+  },
+  {
+    from: '/programming-part2/material/week-8?noredirect=0',
+    to: 'https://materiaalit.github.io/2013-oo-programming/part2/week-8/'
+  },
+  {
+    from: '/programming-part2/material/week-9?noredirect=0',
+    to: 'https://materiaalit.github.io/2013-oo-programming/part2/week-9/'
+  },
+  {
+    from: '/programming-part2/material/week-10?noredirect=0',
+    to: 'https://materiaalit.github.io/2013-oo-programming/part2/week-10/'
+  },
+  {
+    from: '/programming-part2/material/week-11?noredirect=0',
+    to: 'https://materiaalit.github.io/2013-oo-programming/part2/week-11/'
+  },
+  {
+    from: '/programming-part2/material/week-12?noredirect=0',
+    to: 'https://materiaalit.github.io/2013-oo-programming/part2/week-12/'
   },
   {
     from: '/mooc.html',
