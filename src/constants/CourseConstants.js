@@ -2,6 +2,7 @@ import AiImage from "../images/ai.png";
 import FullStackImage from "../images/fullstack.2.png";
 import NoIdeaDogImage from "../images/no-idea-dog.png";
 import NoIdeaDogImageRotated from "../images/no-idea-dog-rotated.png";
+import GuideDogImage from "../images/doggos.png";
 import CyberImage from "../images/cyber.png";
 import TiraImage from "../images/tira.png";
 import TilpeImage from "../images/tilpe.png";
@@ -25,7 +26,7 @@ export const englishCourses = [
     name: "2013 Programming with Java II",
     description:
       "This course is a direct continuation of the course Object-Oriented Programming with Java, part I. In Part II, we will dwell deeper into the world of object-oriented programming.",
-    image: NoIdeaDogImage,
+    image: GuideDogImage,
     href: "http://moocfi.github.io/courses/2013/programming-part-2/"
   }
 ];
