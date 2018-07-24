@@ -1,6 +1,7 @@
 import AiImage from "../images/ai.png";
 import FullStackImage from "../images/fullstack.2.png";
 import NoIdeaDogImage from "../images/no-idea-dog.png";
+import NoIdeaDogImageRotated from "../images/no-idea-dog-rotated.png";
 import CyberImage from "../images/cyber.png";
 import TiraImage from "../images/tira.png";
 import TilpeImage from "../images/tilpe.png";
@@ -17,7 +18,7 @@ export const englishCourses = [
     name: "2013 Programming with Java I",
     description:
       "Learn the basics of computer programming, algorithms and object-oriented programming using the Java programming language.  Tested using our automatic testing service.",
-    image: NoIdeaDogImage,
+    image: NoIdeaDogImageRotated,
     href: "http://moocfi.github.io/courses/2013/programming-part-1/"
   },
   {
