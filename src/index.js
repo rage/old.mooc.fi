@@ -1,6 +1,7 @@
 import React from "react";
 import { render, hydrate } from "react-dom";
-import { loadComponents, getState } from "loadable-components";
+import { loadComponents } from "loadable-components";
+import { getState } from "loadable-components/snap";
 import App from "./App";
 
 import "typeface-roboto";
