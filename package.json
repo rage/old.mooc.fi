@@ -10,7 +10,7 @@
     "@fortawesome/react-fontawesome": "0.1.0-11",
     "@material-ui/core": "^1.2.1",
     "@material-ui/icons": "^1.1.0",
-    "loadable-components": "^0.4.0",
+    "loadable-components": "^2.2.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-motion": "^0.5.2",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "husky": "^1.0.0-rc.9",
-    "react-snap": "^1.18.0"
+    "react-snap": "^1.15.0"
   },
   "husky": {
     "hooks": {
