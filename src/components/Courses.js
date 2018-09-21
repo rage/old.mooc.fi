@@ -63,7 +63,9 @@ export default ({ courses, upcomingCourses }) => (
                 description={course.description}
                 image={course.image}
                 href={course.href}
-                disabled
+                disabled={
+                  course.disabled === undefined ? true : course.disabled
+                }
               />
             ))}
           </CourseGrid>

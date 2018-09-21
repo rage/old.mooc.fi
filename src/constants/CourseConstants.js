@@ -66,6 +66,14 @@ export const finnishCourses = [
 
 export const finnishUpcomingCourses = [
   {
+    name: "Ohjelmoinnin MOOC 2019",
+    description:
+      "Ohjelmointia Javalla perusteista lähtien sekä mahdollisuus opinto-oikeuteen. Täydellinen kurssi ohjelmoinnin alkeiden opetteluun. Ei vaadi esitietoja.",
+    image: NoIdeaDogImageRotated,
+    href: "https://ohjelmointi-19.mooc.fi/",
+    disabled: false
+  },
+  {
     name: "Cyber Security Base",
     description:
       "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional.",
