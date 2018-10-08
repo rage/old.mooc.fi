@@ -35,7 +35,7 @@ export const englishUpcomingCourses = [
   {
     name: "Cyber Security Base",
     description:
-      "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional.",
+      "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional. Starts on October 29th.",
     image: CyberImage
   }
 ];
@@ -76,7 +76,7 @@ export const finnishUpcomingCourses = [
   {
     name: "Cyber Security Base",
     description:
-      "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional.",
+      "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional. Starts on October 29th.",
     image: CyberImage
   },
   {
