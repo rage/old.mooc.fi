@@ -39,6 +39,14 @@ const StyledCard = styled(Card)`
   }
 `;
 
+const CourseDescription = styled.p`
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.46429em;
+`
+
 const StyledCardMedia = styled(CardMedia)`
   height: 0;
   padding-top: 56.25%;
@@ -51,10 +59,10 @@ const CourseCard = ({ name, description, image = "", href, disabled }) => (
       <StyledCard>
         <StyledCardMedia image={image} disabled={disabled} />
         <CardContent>
-          <Typography gutterBottom variant="headline" component="h2">
+          <Typography gutterBottom variant="h5" component="h2">
             {name}
           </Typography>
-          <Typography>{description}</Typography>
+          <CourseDescription>{description}</CourseDescription>
         </CardContent>
       </StyledCard>
     </StyledButtonBase>

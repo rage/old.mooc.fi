@@ -24,9 +24,9 @@ const Explanation = styled.div`
 export default ({ texts }) => (
   <ExplanationWrapper>
     <Fragment>
-      <Typography variant="display1">{texts.headlineContent}</Typography>
+      <Typography variant="h4">{texts.headlineContent}</Typography>
       <Explanation>
-        <Typography variant="subheading">{texts.leadContent}</Typography>
+        <Typography variant="subtitle1">{texts.leadContent}</Typography>
       </Explanation>
       <FancyExpansionPanel items={texts.expansionPanelItems} />
     </Fragment>

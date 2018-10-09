@@ -31,7 +31,7 @@ export default () => (
       return (
         <StyledLink to={to}>
           <LogoImg src={logo} />
-          <LogoTypography variant="title" color="inherit">
+          <LogoTypography variant="h6" color="inherit">
             MOOC.fi
           </LogoTypography>
         </StyledLink>

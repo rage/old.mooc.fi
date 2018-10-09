@@ -46,14 +46,14 @@ class Account extends React.Component {
             </Tabs>
           </Paper>
           <div>
-            <Typography variant="display1">Courses</Typography>
+            <Typography variant="h4">Courses</Typography>
             <p>
               Here are results from some of the courses you have completed with
               your mooc.fi account.
             </p>
             <CourseResultCard>
               <CardContent>
-                <Typography variant="headline">
+                <Typography variant="h5">
                   Ohjelmoinnin MOOC 2018
                   <Progress>
                     <ScoreProgress name="Part 1" progress={80} />
@@ -66,13 +66,13 @@ class Account extends React.Component {
             </CourseResultCard>
             <CourseResultCard>
               <CardContent>
-                <Typography variant="headline">Cyber Security Base</Typography>
+                <Typography variant="h5">Cyber Security Base</Typography>
                 <p>No results available yet.</p>
               </CardContent>
             </CourseResultCard>
             <CourseResultCard>
               <CardContent>
-                <Typography variant="headline">Elements of AI</Typography>
+                <Typography variant="h5">Elements of AI</Typography>
                 <p>No results available yet.</p>
               </CardContent>
             </CourseResultCard>

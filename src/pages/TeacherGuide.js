@@ -47,7 +47,7 @@ class TeacherGuide extends React.Component {
           language === languages.finnish ? (
             <div>
               <ContentBlock>
-                <Header variant="display2">MOOC.fi opettajille</Header>
+                <Header variant="h3">MOOC.fi opettajille</Header>
                 <TextBlock>
                   Ohjelmointitaito korostuu jatkuvasti nykyajan maailmassa ja
                   opetuksessa. Avustamme kaikkia kiinnostuneita kouluja
@@ -61,7 +61,7 @@ class TeacherGuide extends React.Component {
               </ContentBlock>
               <ContentBlock>
                 <StyledIcon icon={faGraduationCap} size="3x" />
-                <Header variant="display1">MOOCin käyttö opetuksessa</Header>
+                <Header variant="h4">MOOCin käyttö opetuksessa</Header>
                 <TextBlock>
                   Voit hyödyntää suurinta osaa tarjoamistamme materiaaleista
                   vapaasti. Materiaaleissamme on lähes poikkeuksetta käytetty{" "}
@@ -96,7 +96,7 @@ class TeacherGuide extends React.Component {
               </ContentBlock>
               <ContentBlock>
                 <StyledIcon icon={faBookOpen} size="3x" />
-                <Header variant="display1">Näin järjestät kurssin</Header>
+                <Header variant="h4">Näin järjestät kurssin</Header>
                 <TextBlock>
                   Mikäli opiskelijasi haluavat hakea Ohjelmoinnin MOOC -kurssin
                   kautta opiskelupaikkaa Helsingin yliopiston tietojenkäsittelyn
@@ -125,7 +125,7 @@ class TeacherGuide extends React.Component {
               </ContentBlock>
               <ContentBlock>
                 <StyledIcon icon={faLaptop} size="3x" />
-                <Header variant="display1">Test My Code (TMC)</Header>
+                <Header variant="h4">Test My Code (TMC)</Header>
                 <TextBlock>
                   Test My Code (TMC) on järjestelmä, joka huolehtii tehtävien
                   automaattisesta tarkastuksesta ja pisteytyksestä. Opettajille
@@ -142,7 +142,7 @@ class TeacherGuide extends React.Component {
               </ContentBlock>
               <ContentBlock>
                 <StyledIcon icon={faPlusSquare} size="3x" />
-                <Header variant="display1">Kurssin perustaminen</Header>
+                <Header variant="h4">Kurssin perustaminen</Header>
                 <TextBlock>
                   Aloita luomalla itsellesi käyttäjätunnus sivustolle{" "}
                   <a href="https://tmc.mooc.fi/">https://tmc.mooc.fi/</a>.
@@ -181,7 +181,7 @@ class TeacherGuide extends React.Component {
               </ContentBlock>
               <ContentBlock>
                 <StyledIcon icon={faUserFriends} size="3x" />
-                <Header variant="display1">Vinkkejä lähiopetukseen</Header>
+                <Header variant="h4">Vinkkejä lähiopetukseen</Header>
                 <TextBlock>
                   Ohjelmointia oppii parhaiten tekemällä, ja siksi tärkeintä
                   onkin että opiskelijat pääsevät itse ohjelmoimaan
@@ -211,7 +211,7 @@ class TeacherGuide extends React.Component {
               </ContentBlock>
               <ContentBlock>
                 <StyledIcon icon={faBook} size="3x" />
-                <Header variant="display1">Opetussuunnitelma 2016</Header>
+                <Header variant="h4">Opetussuunnitelma 2016</Header>
                 <TextBlock>
                   Lähivuosina kaikki opettelevat ohjelmointia peruskoulusta
                   asti. Tämä vaatii opettajilta ohjelmointiosaamista.
@@ -227,7 +227,7 @@ class TeacherGuide extends React.Component {
               </ContentBlock>
               <ContentBlock>
                 <StyledIcon icon={faComments} size="3x" />
-                <Header variant="display1">Ota yhteyttä</Header>
+                <Header variant="h4">Ota yhteyttä</Header>
                 <TextBlock>
                   Saat meihin parhaiten yhteyden lähettämällä sähköpostia
                   osoitteeseen{" "}
@@ -239,7 +239,7 @@ class TeacherGuide extends React.Component {
             <div>
               <ContentBlock>
                 <StyledIcon icon={faGraduationCap} size="3x" />
-                <Header variant="display2">MOOC.fi for teachers</Header>
+                <Header variant="h3">MOOC.fi for teachers</Header>
                 <TextBlock>
                   You can utilize most of our materials freely. Most of them are
                   licenced with{" "}
@@ -271,7 +271,7 @@ class TeacherGuide extends React.Component {
               </ContentBlock>
               <ContentBlock>
                 <StyledIcon icon={faBookOpen} size="3x" />
-                <Header variant="display1">How to host your own course</Header>
+                <Header variant="h4">How to host your own course</Header>
                 <TextBlock>
                   You can create your own course instance to our automatic
                   assessment system Test My Code (TMC). We offer ready-to-use
@@ -297,7 +297,7 @@ class TeacherGuide extends React.Component {
               </ContentBlock>
               <ContentBlock>
                 <StyledIcon icon={faLaptop} size="3x" />
-                <Header variant="display1">Test My Code (TMC)</Header>
+                <Header variant="h4">Test My Code (TMC)</Header>
                 <TextBlock>
                   Test My Code is an automatic assessment system, that handles
                   the automatic assessment and feedback for the course
@@ -315,7 +315,7 @@ class TeacherGuide extends React.Component {
               </ContentBlock>
               <ContentBlock>
                 <StyledIcon icon={faPlusSquare} size="3x" />
-                <Header variant="display1">Creating your own course</Header>
+                <Header variant="h4">Creating your own course</Header>
                 <TextBlock>
                   Begin by registering to the website{" "}
                   <a href="https://tmc.mooc.fi/">https://tmc.mooc.fi/</a>.
@@ -353,7 +353,7 @@ class TeacherGuide extends React.Component {
               </ContentBlock>
               <ContentBlock>
                 <StyledIcon icon={faComments} size="3x" />
-                <Header variant="display1">Keep in touch</Header>
+                <Header variant="h4">Keep in touch</Header>
                 <TextBlock>
                   You can best reach us by email at{" "}
                   <a href="mailto:mooc@cs.helsinki.fi">mooc@cs.helsinki.fi</a>.

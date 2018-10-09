@@ -22,6 +22,9 @@ const theme = createMuiTheme({
       default: "#FFFFFF"
     }
   },
+  typography: {
+    useNextVariants: true,
+  },
   overrides: {
     MuiButton: {
       root: {
@@ -29,7 +32,7 @@ const theme = createMuiTheme({
       }
     },
     MuiTypography: {
-      body1: {
+      body2: {
         fontSize: "16px",
       },
       subheading: {

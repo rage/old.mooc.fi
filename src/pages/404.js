@@ -19,12 +19,12 @@ const NotFoundPage = () => (
   <LanguageContext.Consumer>
     {language => (
       <StyledContainer>
-        <Header variant="display2">
+        <Header variant="h3">
           {language === languages.finnish
             ? "Sivua ei löytynyt"
             : "Page not found"}
         </Header>
-        <StyledTypography variant="subheading">
+        <StyledTypography variant="subtitle1">
           {language === languages.finnish ? (
             <div>
               Etsimääsi sivua ei ole olemassa, tai se on poistettu.

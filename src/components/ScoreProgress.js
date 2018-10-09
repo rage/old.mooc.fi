@@ -23,9 +23,9 @@ const StyledProgress = styled(LinearProgress)`
 
 export default ({ name, progress }) => (
   <Container>
-    <Name variant="body2">{name}</Name>
+    <Name>{name}</Name>
 
     <StyledProgress variant="determinate" value={progress} />
-    <Percentage variant="body2">{progress} %</Percentage>
+    <Percentage>{progress} %</Percentage>
   </Container>
 );

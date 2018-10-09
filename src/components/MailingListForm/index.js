@@ -50,7 +50,7 @@ class MailingListForm extends React.Component {
           <MailingList>
             <StyledCard>
               <CardContent>
-                <StyledHeader variant="headline">
+                <StyledHeader variant="h5">
                   {language === languages.finnish
                     ? "Haluatko ilmoituksia uusista kursseista?"
                     : "Get notified of new courses"}

@@ -5,7 +5,7 @@ import SentimentSatisfiedIcon from "@material-ui/icons/SentimentSatisfied";
 import LanguageContext, { languages } from "../../contexes/LanguageContext";
 
 export default () => (
-  <Typography variant="subheading">
+  <Typography variant="subtitle1">
     <LanguageContext.Consumer>
       {language =>
         language === languages.finnish

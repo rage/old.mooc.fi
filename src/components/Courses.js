@@ -36,7 +36,7 @@ export default ({ courses, upcomingCourses }) => (
     {language => (
       <Fragment>
         <CoursesWrapper>
-          <Header variant="display2">
+          <Header variant="h3">
             {language === languages.finnish ? "Kurssit" : "Courses"}
           </Header>
           <CourseGrid>
@@ -52,7 +52,7 @@ export default ({ courses, upcomingCourses }) => (
           </CourseGrid>
         </CoursesWrapper>
         <CoursesWrapper>
-          <Header variant="display2">
+          <Header variant="h3">
             {language === languages.finnish ? "Tulossa" : "Coming up"}
           </Header>
           <CourseGrid>

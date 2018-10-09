@@ -19,8 +19,8 @@ export default () => (
   <AccountInfoContainer>
     <AccountCircle style={{ fontSize: 150, color: "#303030" }} />
     <Details>
-      <Typography variant="title">Henrik Nygren</Typography>
-      <Typography variant="subheading">henrik@example.com</Typography>
+      <Typography variant="h6">Henrik Nygren</Typography>
+      <Typography variant="subtitle1">henrik@example.com</Typography>
     </Details>
   </AccountInfoContainer>
 );

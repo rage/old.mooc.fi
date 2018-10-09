@@ -31,7 +31,7 @@ const Card = styled(ButtonBase)`
   }
 `;
 
-const LongDescription = styled.div`
+const LongDescription = styled.p`
   height: calc(var(--open-ratio) * var(--calculated-height) * 1px);
   overflow: hidden;
   padding: 0 1.85rem;
@@ -39,10 +39,18 @@ const LongDescription = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+  line-height: 1.46429em !important;
 `;
 
 const ShortDescription = styled.div`
   padding: 0 1.85rem;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+  line-height: 1.46429em !important;
 `;
 
 const StyledExpandMoreIcon = styled(ExpandMoreIcon)`
@@ -89,13 +97,13 @@ export default class ExpansionPanelItem extends React.Component {
       >
         <Header>
           <Icon />
-          <Heading theme="this.props.theme">{item.title}</Heading>
+          <Heading>{item.title}</Heading>
           <StyledExpandMoreIcon
             expanded={this.state.expanded ? "1" : undefined}
           />
         </Header>
         <ShortDescription>
-          <Typography>{item.shortDescription}</Typography>
+          {item.shortDescription}
         </ShortDescription>
         <Motion style={{ openRatio: spring(this.state.expanded ? 1 : 0) }}>
           {({ openRatio }) => {
@@ -105,7 +113,7 @@ export default class ExpansionPanelItem extends React.Component {
                 expanded={this.state.expanded ? "1" : undefined}
                 innerRef={this.longDescriptionRef}
               >
-                <Typography>{item.longDescription}</Typography>
+                {item.longDescription}
                 {item.buttonLink && (
                   <StyledButton
                     variant="contained"
