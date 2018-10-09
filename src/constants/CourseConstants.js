@@ -18,14 +18,14 @@ export const englishCourses = [
   {
     name: "2013 Programming with Java I",
     description:
-      "Learn the basics of computer programming, algorithms and object-oriented programming using the Java programming language.  Tested using our automatic testing service.",
+      "Learn the basics of computer programming, algorithms and object-oriented programming using the Java programming language.",
     image: NoIdeaDogImageRotated,
     href: "http://moocfi.github.io/courses/2013/programming-part-1/"
   },
   {
     name: "2013 Programming with Java II",
     description:
-      "This course is a direct continuation of the course Object-Oriented Programming with Java, part I. In Part II, we will dwell deeper into the world of object-oriented programming.",
+      "This course is a direct continuation of the course Object-Oriented Programming with Java, part I.",
     image: GuideDogImage,
     href: "http://moocfi.github.io/courses/2013/programming-part-2/"
   }
