@@ -90,5 +90,11 @@ export const finnishUpcomingCourses = [
     description:
       "Miten internet toimii? Opi miten tietokoneet, puhelimet ja palvelimet keskustelevat verkon yli. Mitä ovat reitittimet ja kytkimet? Opi miten näitä hyödynnetään ohjelmissasi.",
     image: TilpeImage
+  },
+  {
+    name: "Full stack open 2019",
+    description:
+      "Syväsukellus moderniin websovelluskehitykseen — ota haltuusi React, Redux, Node.js ja MongoDB! Kurssi alkaa 15.3. ja päättyy 15.12.",
+    image: FullStackImage,
   }
 ];
