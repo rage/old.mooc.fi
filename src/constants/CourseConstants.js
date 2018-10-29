@@ -16,6 +16,13 @@ export const englishCourses = [
     href: "https://www.elementsofai.com/"
   },
   {
+    name: "Cyber Security Base",
+    description:
+      "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional. Starts on October 29th.",
+    image: CyberImage,
+    href: "https://cybersecuritybase.mooc.fi"
+  },
+  {
     name: "2013 Programming with Java I",
     description:
       "Learn the basics of computer programming, algorithms and object-oriented programming using the Java programming language.",
@@ -31,14 +38,7 @@ export const englishCourses = [
   }
 ];
 
-export const englishUpcomingCourses = [
-  {
-    name: "Cyber Security Base",
-    description:
-      "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional. Starts on October 29th.",
-    image: CyberImage
-  }
-];
+export const englishUpcomingCourses = [];
 
 export const finnishCourses = [
   {
@@ -47,6 +47,13 @@ export const finnishCourses = [
       "Vievätkö robotit työmme? Miten tekoäly muuttaa työelämää seuraavan 10 vuoden aikana? Millainen yhteiskunnallinen vaikutus tekoälyllä on?",
     image: AiImage,
     href: "https://www.elementsofai.com/"
+  },
+  {
+    name: "Cyber Security Base",
+    description:
+      "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional. Starts on October 29th.",
+    image: CyberImage,
+    href: "https://cybersecuritybase.mooc.fi"
   },
   {
     name: "Full stack open 2018",
@@ -72,12 +79,6 @@ export const finnishUpcomingCourses = [
     image: NoIdeaDogImageRotated,
     href: "https://ohjelmointi-19.mooc.fi/",
     disabled: false
-  },
-  {
-    name: "Cyber Security Base",
-    description:
-      "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional. Starts on October 29th.",
-    image: CyberImage
   },
   {
     name: "Tietorakenteet ja algoritmit",

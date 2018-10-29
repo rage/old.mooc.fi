@@ -51,25 +51,28 @@ export default ({ courses, upcomingCourses }) => (
             ))}
           </CourseGrid>
         </CoursesWrapper>
-        <CoursesWrapper>
-          <Header variant="h3">
-            {language === languages.finnish ? "Tulossa" : "Coming up"}
-          </Header>
-          <CourseGrid>
-            {upcomingCourses.map(course => (
-              <CourseCard
-                key={course.name}
-                name={course.name}
-                description={course.description}
-                image={course.image}
-                href={course.href}
-                disabled={
-                  course.disabled === undefined ? true : course.disabled
-                }
-              />
-            ))}
-          </CourseGrid>
-        </CoursesWrapper>
+        {upcomingCourses &&
+          upcomingCourses.length > 0 && (
+            <CoursesWrapper>
+              <Header variant="h3">
+                {language === languages.finnish ? "Tulossa" : "Coming up"}
+              </Header>
+              <CourseGrid>
+                {upcomingCourses.map(course => (
+                  <CourseCard
+                    key={course.name}
+                    name={course.name}
+                    description={course.description}
+                    image={course.image}
+                    href={course.href}
+                    disabled={
+                      course.disabled === undefined ? true : course.disabled
+                    }
+                  />
+                ))}
+              </CourseGrid>
+            </CoursesWrapper>
+          )}
       </Fragment>
     )}
   </LanguageContext.Consumer>
