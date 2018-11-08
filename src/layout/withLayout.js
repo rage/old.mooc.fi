@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 import withRoot from "./withRoot";
 import Navigation from "./Navigation";
-import styled, { injectGlobal } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import Footer from "./Footer";
 
 const FOOTER_HEIGHT = 100;
 
-injectGlobal`
+createGlobalStyle`
   html, body, #root {
   height: 100%;
   margin: 0;

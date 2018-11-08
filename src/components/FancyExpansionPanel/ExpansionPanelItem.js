@@ -111,7 +111,7 @@ export default class ExpansionPanelItem extends React.Component {
               <LongDescription
                 style={{ "--open-ratio": `${openRatio}` }}
                 expanded={this.state.expanded ? "1" : undefined}
-                innerRef={this.longDescriptionRef}
+                ref={this.longDescriptionRef}
               >
                 {item.longDescription}
                 {item.buttonLink && (
