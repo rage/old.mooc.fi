@@ -46,7 +46,7 @@ export const finnishCourses = [
     description:
       "Vievätkö robotit työmme? Miten tekoäly muuttaa työelämää seuraavan 10 vuoden aikana? Millainen yhteiskunnallinen vaikutus tekoälyllä on?",
     image: AiImage,
-    href: "https://www.elementsofai.com/"
+    href: "https://www.elementsofai.com/fi"
   },
   {
     name: "Cyber Security Base",
@@ -63,7 +63,7 @@ export const finnishCourses = [
     href: "http://moocfi.github.io/courses/2018/fullstack/"
   },
   {
-    name: "Ohjelmoinnin MOOC",
+    name: "Ohjelmoinnin MOOC 2018",
     description:
       "Ohjelmointia Javalla perusteista lähtien sekä mahdollisuus opinto-oikeuteen. Täydellinen kurssi ohjelmoinnin alkeiden opetteluun. Ei vaadi esitietoja.",
     image: NoIdeaDogImage,
