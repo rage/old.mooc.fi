@@ -5,7 +5,13 @@ import styled from "styled-components";
 import { TextField } from "@material-ui/core";
 import LanguageContext, { languages } from "../../contexes/LanguageContext";
 
-const StyledTextField = styled(TextField)``;
+const FieldWrapper = styled.div`
+  display: flex;
+`;
+
+const StyledFormControl = styled(FormControl)`
+  flex: 1;
+`;
 
 export default ({ formRef, handleSubmit }) => (
   <form
@@ -16,25 +22,27 @@ export default ({ formRef, handleSubmit }) => (
     target="_blank"
     noValidate
   >
-    <FormControl>
-      <LanguageContext.Consumer>
-        {language => (
-          <StyledTextField
-            label={
-              language === languages.finnish
-                ? "Sähköpostiosoite"
-                : "Email address"
-            }
-            name="EMAIL"
-          />
-        )}
-      </LanguageContext.Consumer>
-    </FormControl>
-    <MailingListSubscribeButton
-      onClick={() => {
-        formRef.current.submit();
-        handleSubmit();
-      }}
-    />
+    <FieldWrapper>
+      <StyledFormControl>
+        <LanguageContext.Consumer>
+          {language => (
+            <TextField
+              label={
+                language === languages.finnish
+                  ? "Sähköpostiosoite"
+                  : "Email address"
+              }
+              name="EMAIL"
+            />
+          )}
+        </LanguageContext.Consumer>
+      </StyledFormControl>
+      <MailingListSubscribeButton
+        onClick={() => {
+          formRef.current.submit();
+          handleSubmit();
+        }}
+      />
+    </FieldWrapper>
   </form>
 );

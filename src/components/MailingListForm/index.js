@@ -19,7 +19,6 @@ const MailingList = styled.div`
 `;
 
 const StyledCard = styled(Card)`
-  min-height: 15rem;
   width: 90%;
   max-width: 40rem;
   padding: 1rem;
