@@ -2,12 +2,11 @@
 // https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/config/webpack.config.prod.js#L325
 // https://github.com/GoogleChromeLabs/sw-precache#options-parameter
 module.exports = {
-  // a directory should be the same as "reactSnap.destination",
-  // which default value is `build`
+  clientsClaim: true,
   staticFileGlobs: [
     "build/static/css/*.css",
     "build/static/js/*.js",
-    "build/index.html"
+    "build/static/media/*"
   ],
   stripPrefix: "build",
   publicPath: ".",
