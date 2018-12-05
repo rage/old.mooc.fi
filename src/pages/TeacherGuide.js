@@ -167,7 +167,7 @@ class TeacherGuide extends React.Component {
                   TMC opas opettajille
                 </StyledButton>
                 <TextBlock>
-                  <b>Huom:</b> organisaatio luodaan järjestelmään välittämästi,
+                  <b>Huom:</b> organisaatio luodaan järjestelmään välittömästi,
                   joten voit heti organisaation luomisen jälkeen lisätä sen alle
                   kursseja. Et kuitenkaan näe tehtävien mallivastauksia ennen
                   kuin järjestelmänvalvoja varmistaa organisaatiosi. Järjestelyn
