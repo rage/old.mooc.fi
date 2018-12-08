@@ -6,6 +6,7 @@ import GuideDogImage from "../images/doggos.png";
 import CyberImage from "../images/cyber.png";
 import TiraImage from "../images/tira.png";
 import TilpeImage from "../images/tilpe.png";
+import TikapeImage from "../images/tikape.jpg"
 
 export const englishCourses = [
   {
@@ -75,10 +76,15 @@ export const finnishUpcomingCourses = [
   {
     name: "Ohjelmoinnin MOOC 2019",
     description:
-      "Ohjelmointia Javalla perusteista lähtien sekä mahdollisuus opinto-oikeuteen. Täydellinen kurssi ohjelmoinnin alkeiden opetteluun. Ei vaadi esitietoja.",
+      "Ohjelmointia Javalla perusteista lähtien sekä mahdollisuus opinto-oikeuteen. Täydellinen kurssi ohjelmoinnin alkeiden opetteluun. Ei vaadi esitietoja. Alkaa 14.12.2018.",
     image: NoIdeaDogImageRotated,
     href: "https://ohjelmointi-19.mooc.fi/",
     disabled: false
+  },
+  {
+    name: "Tietokantojen perusteet",
+    description: "Miten tietokannat toimivat? Opi SQL-kielen perusteet, relaatietokantojen suunnittelun ja käytön, sekä tietokantaa käyttävien ohjelmistojen perusteet. Alkaa tammikuussa 2019.",
+    image: TikapeImage,
   },
   {
     name: "Tietorakenteet ja algoritmit",
