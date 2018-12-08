@@ -7,6 +7,7 @@ import CyberImage from "../images/cyber.png";
 import TiraImage from "../images/tira.png";
 import TilpeImage from "../images/tilpe.png";
 import TikapeImage from "../images/tikape.jpg"
+import TitoImage from "../images/tietokoneen-toiminnan-perusteet.jpg"
 
 export const englishCourses = [
   {
@@ -87,6 +88,12 @@ export const finnishUpcomingCourses = [
     image: TikapeImage,
   },
   {
+    name: "Full stack open 2019",
+    description:
+      "Syväsukellus moderniin websovelluskehitykseen — ota haltuusi React, Redux, Node.js ja MongoDB! Kurssi alkaa 15.3. ja päättyy 15.12.",
+    image: FullStackImage,
+  },
+  {
     name: "Tietorakenteet ja algoritmit",
     description:
       "Osaat jo ohjelmoida mutta haluat kehittyä lisää. Opi suunnittelemaan tehokkaita algoritmeja, joilla voit ratkaista kinkkisiä ongelmia salamannopeasti.",
@@ -99,9 +106,8 @@ export const finnishUpcomingCourses = [
     image: TilpeImage
   },
   {
-    name: "Full stack open 2019",
-    description:
-      "Syväsukellus moderniin websovelluskehitykseen — ota haltuusi React, Redux, Node.js ja MongoDB! Kurssi alkaa 15.3. ja päättyy 15.12.",
-    image: FullStackImage,
+    name: "Tietokoneen toiminnan perusteet",
+    description: "Mitä tietokoneet ovat ja miten ne toimivat? Opi alkeet millaisista osista ja toiminnallisuuksista nämä meille elintärkeät laitteet koostuvat.",
+    image: TitoImage,
   }
 ];
