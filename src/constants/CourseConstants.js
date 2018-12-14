@@ -65,6 +65,13 @@ export const finnishCourses = [
     href: "http://moocfi.github.io/courses/2018/fullstack/"
   },
   {
+    name: "Ohjelmoinnin MOOC 2019",
+    description:
+      "Ohjelmointia Javalla perusteista lähtien sekä mahdollisuus opinto-oikeuteen. Täydellinen kurssi ohjelmoinnin alkeiden opetteluun. Ei vaadi esitietoja. Alkaa 14.12.2018.",
+    image: NoIdeaDogImageRotated,
+    href: "https://ohjelmointi-19.mooc.fi/",
+  },
+  {
     name: "Ohjelmoinnin MOOC 2018",
     description:
       "Ohjelmointia Javalla perusteista lähtien sekä mahdollisuus opinto-oikeuteen. Täydellinen kurssi ohjelmoinnin alkeiden opetteluun. Ei vaadi esitietoja.",
@@ -74,14 +81,6 @@ export const finnishCourses = [
 ];
 
 export const finnishUpcomingCourses = [
-  {
-    name: "Ohjelmoinnin MOOC 2019",
-    description:
-      "Ohjelmointia Javalla perusteista lähtien sekä mahdollisuus opinto-oikeuteen. Täydellinen kurssi ohjelmoinnin alkeiden opetteluun. Ei vaadi esitietoja. Alkaa 14.12.2018.",
-    image: NoIdeaDogImageRotated,
-    href: "https://ohjelmointi-19.mooc.fi/",
-    disabled: false
-  },
   {
     name: "Tietokantojen perusteet",
     description: "Miten tietokannat toimivat? Opi SQL-kielen perusteet, relaatietokantojen suunnittelun ja käytön, sekä tietokantaa käyttävien ohjelmistojen perusteet. Alkaa tammikuussa 2019.",
