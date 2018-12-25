@@ -379,4 +379,8 @@ export const redirects = [
     from: '/courses/2016/ohjelmoinnin-mooc/vaihtaminen-nodl-kurssille.html',
     to: 'http://moocfi.github.io/courses/2016/ohjelmoinnin-mooc/vaihtaminen-nodl-kurssille.html'
   },
+  {
+    from: '/content/mikä-mooc',
+    to: '/'
+  }
 ];
