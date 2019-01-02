@@ -67,13 +67,6 @@ export const finnishCourses = {
       image: CyberImage,
       href: "https://cybersecuritybase.mooc.fi",
     },
-    {
-      name: "Full stack open 2018",
-      description:
-        "Syväsukellus moderniin websovelluskehitykseen — ota haltuusi React, Redux, Node.js ja MongoDB! Pääpaino on Reactilla tehdyissä single page -sovelluksissa.",
-      image: FullStackImage,
-      href: "http://moocfi.github.io/courses/2018/fullstack/",
-    },
   ],
   upcomingCourses: [
     {
@@ -116,6 +109,13 @@ export const finnishCourses = {
         "Ohjelmointia Javalla perusteista lähtien sekä mahdollisuus opinto-oikeuteen. Täydellinen kurssi ohjelmoinnin alkeiden opetteluun. Ei vaadi esitietoja.",
       image: NoIdeaDogImage,
       href: "http://moocfi.github.io/courses/2018/ohjelmoinnin-mooc/",
+    },
+    {
+      name: "Full stack open 2018",
+      description:
+        "Syväsukellus moderniin websovelluskehitykseen — ota haltuusi React, Redux, Node.js ja MongoDB! Pääpaino on Reactilla tehdyissä single page -sovelluksissa.",
+      image: FullStackImage,
+      href: "http://moocfi.github.io/courses/2018/fullstack/",
     },
   ],
 };
