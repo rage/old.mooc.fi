@@ -47,6 +47,13 @@ export const englishCourses = {
 export const finnishCourses = {
   ongoingCourses: [
     {
+      name: "Ohjelmoinnin MOOC 2019",
+      description:
+        "Ohjelmointia Javalla perusteista lähtien sekä mahdollisuus opinto-oikeuteen. Täydellinen kurssi ohjelmoinnin alkeiden opetteluun. Ei vaadi esitietoja.",
+      image: NoIdeaDogImageRotated,
+      href: "https://ohjelmointi-19.mooc.fi/",
+    },
+    {
       name: "Elements of AI",
       description:
         "Vievätkö robotit työmme? Miten tekoäly muuttaa työelämää seuraavan 10 vuoden aikana? Millainen yhteiskunnallinen vaikutus tekoälyllä on?",
@@ -66,13 +73,6 @@ export const finnishCourses = {
         "Syväsukellus moderniin websovelluskehitykseen — ota haltuusi React, Redux, Node.js ja MongoDB! Pääpaino on Reactilla tehdyissä single page -sovelluksissa.",
       image: FullStackImage,
       href: "http://moocfi.github.io/courses/2018/fullstack/",
-    },
-    {
-      name: "Ohjelmoinnin MOOC 2019",
-      description:
-        "Ohjelmointia Javalla perusteista lähtien sekä mahdollisuus opinto-oikeuteen. Täydellinen kurssi ohjelmoinnin alkeiden opetteluun. Ei vaadi esitietoja.",
-      image: NoIdeaDogImageRotated,
-      href: "https://ohjelmointi-19.mooc.fi/",
     },
   ],
   upcomingCourses: [
