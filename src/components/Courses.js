@@ -31,28 +31,29 @@ const CourseGrid = styled.div`
   }
 `;
 
-export default ({ courses, upcomingCourses }) => (
-  <LanguageContext.Consumer>
-    {language => (
-      <Fragment>
-        <CoursesWrapper>
-          <Header variant="h3">
-            {language === languages.finnish ? "Kurssit" : "Courses"}
-          </Header>
-          <CourseGrid>
-            {courses.map(course => (
-              <CourseCard
-                key={course.name}
-                name={course.name}
-                description={course.description}
-                image={course.image}
-                href={course.href}
-              />
-            ))}
-          </CourseGrid>
-        </CoursesWrapper>
-        {upcomingCourses &&
-          upcomingCourses.length > 0 && (
+export default ({ courses }) => {
+  const { upcomingCourses, ongoingCourses, pastCourses } = courses;
+  return (
+    <LanguageContext.Consumer>
+      {language => (
+        <Fragment>
+          <CoursesWrapper>
+            <Header variant="h3">
+              {language === languages.finnish ? "Kurssit" : "Courses"}
+            </Header>
+            <CourseGrid>
+              {ongoingCourses.map(course => (
+                <CourseCard
+                  key={course.name}
+                  name={course.name}
+                  description={course.description}
+                  image={course.image}
+                  href={course.href}
+                />
+              ))}
+            </CourseGrid>
+          </CoursesWrapper>
+          {upcomingCourses && upcomingCourses.length > 0 && (
             <CoursesWrapper>
               <Header variant="h3">
                 {language === languages.finnish ? "Tulossa" : "Coming up"}
@@ -73,7 +74,28 @@ export default ({ courses, upcomingCourses }) => (
               </CourseGrid>
             </CoursesWrapper>
           )}
-      </Fragment>
-    )}
-  </LanguageContext.Consumer>
-);
+          {pastCourses && pastCourses.length > 0 && (
+            <CoursesWrapper>
+              <Header variant="h3">
+                {language === languages.finnish
+                  ? "Vanhat kurssit"
+                  : "Old courses"}
+              </Header>
+              <CourseGrid>
+                {pastCourses.map(course => (
+                  <CourseCard
+                    key={course.name}
+                    name={course.name}
+                    description={course.description}
+                    image={course.image}
+                    href={course.href}
+                  />
+                ))}
+              </CourseGrid>
+            </CoursesWrapper>
+          )}
+        </Fragment>
+      )}
+    </LanguageContext.Consumer>
+  );
+};

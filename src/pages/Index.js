@@ -1,15 +1,10 @@
 import React, { Fragment } from "react";
 import withLayout from "../layout/withLayout";
 import LanguageContext, { languages } from "../contexes/LanguageContext";
-import {
-  finnishCourses,
-  englishCourses,
-  finnishUpcomingCourses,
-  englishUpcomingCourses
-} from "../constants/CourseConstants";
+import { finnishCourses, englishCourses } from "../constants/CourseConstants";
 import {
   finnishExplanations,
-  englishExplanations
+  englishExplanations,
 } from "../constants/ExplanationConstants";
 
 import Courses from "../components/Courses";
@@ -39,11 +34,6 @@ class Index extends React.Component {
                     language === languages.finnish
                       ? finnishCourses
                       : englishCourses
-                  }
-                  upcomingCourses={
-                    language === languages.finnish
-                      ? finnishUpcomingCourses
-                      : englishUpcomingCourses
                   }
                 />
               </Fragment>
