@@ -61,6 +61,14 @@ export const finnishCourses = {
       href: "https://www.elementsofai.com/fi",
     },
     {
+      name: "Tietokantojen perusteet",
+      description:
+        "Miten tietokannat toimivat? Opi SQL-kielen perusteet, relaatietokantojen suunnittelun ja käytön, sekä tietokantaa käyttävien ohjelmistojen perusteet. Alkaa tammikuussa 15.1.2019. Ilmoittautuminen käynnissä.",
+      image: TikapeImage,
+      disabled: false,
+      href: "https://tietokantojen-perusteet-19.mooc.fi/",
+    },
+    {
       name: "Cyber Security Base",
       description:
         "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional. Starts on October 29th.",
@@ -69,14 +77,6 @@ export const finnishCourses = {
     },
   ],
   upcomingCourses: [
-    {
-      name: "Tietokantojen perusteet",
-      description:
-        "Miten tietokannat toimivat? Opi SQL-kielen perusteet, relaatietokantojen suunnittelun ja käytön, sekä tietokantaa käyttävien ohjelmistojen perusteet. Alkaa tammikuussa 2019.",
-      image: TikapeImage,
-      disabled: false,
-      href: "https://tietokantojen-perusteet-19.mooc.fi/",
-    },
     {
       name: "Full stack open 2019",
       description:
