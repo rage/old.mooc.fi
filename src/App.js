@@ -4,7 +4,6 @@ import registerServiceWorker from "./registerServiceWorker";
 
 import trackHeight from "./util/trackHeight";
 import NewContentPopup from "./components/NewContentPopup";
-import Notification from "./components/Notification";
 
 export default class App extends React.Component {
   state = {
@@ -24,7 +23,6 @@ export default class App extends React.Component {
     return (
       <Fragment>
         <Router />
-        <Notification />
         <NewContentPopup updateAvailable={this.state.updateAvailable} />
       </Fragment>
     );
