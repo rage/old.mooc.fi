@@ -63,7 +63,7 @@ export const finnishCourses = {
     {
       name: "Tietokantojen perusteet",
       description:
-        "Miten tietokannat toimivat? Opi SQL-kielen perusteet, relaatietokantojen suunnittelun ja käytön, sekä tietokantaa käyttävien ohjelmistojen perusteet. Alkaa tammikuussa 15.1.2019. Ilmoittautuminen käynnissä.",
+        "Miten tietokannat toimivat? Opi SQL-kielen perusteet, relaatietokantojen suunnittelun ja käytön, sekä tietokantaa käyttävien ohjelmistojen perusteet. Ilmoittautuminen käynnissä.",
       image: TikapeImage,
       disabled: false,
       href: "https://tietokantojen-perusteet-19.mooc.fi/",
