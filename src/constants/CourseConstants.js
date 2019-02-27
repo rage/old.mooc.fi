@@ -92,7 +92,7 @@ export const finnishCourses = {
     {
       name: "Tietoliikenteen perusteet",
       description:
-        "Miten internet toimii? Opi miten tietokoneet, puhelimet ja palvelimet keskustelevat verkon yli. Mitä ovat reitittimet ja kytkimet? Opi miten näitä hyödynnetään ohjelmissasi.",
+        "Miten internet toimii? Opi miten tietokoneet, puhelimet ja palvelimet keskustelevat verkon yli. Mitä ovat reitittimet ja kytkimet?",
       image: TilpeImage,
     },
     {
