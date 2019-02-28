@@ -8,6 +8,7 @@ import TiraImage from "../images/tira.png";
 import TilpeImage from "../images/tilpe.png";
 import TikapeImage from "../images/tikape.jpg";
 import TitoImage from "../images/tietokoneen-toiminnan-perusteet.jpg";
+import WepaImage from "../images/wepa.jpg";
 
 export const englishCourses = {
   ongoingCourses: [
@@ -77,6 +78,12 @@ export const finnishCourses = {
     },
   ],
   upcomingCourses: [
+    {
+      name: "Web-palvelinohjelmointi Java",
+      description:
+        "Java-kielisten web-sovellusten toteutus tutuksi. Opi mm. Spring sovelluskehyksen periaatteet. Kurssi alkaa 8.3. ja päättyy 10.5.",
+      image: WepaImage,
+    },
     {
       name: "Full stack open 2019",
       description:
