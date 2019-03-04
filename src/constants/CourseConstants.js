@@ -41,7 +41,12 @@ export const englishCourses = {
       href: "http://moocfi.github.io/courses/2013/programming-part-2/",
     },
   ],
-  upcomingCourses: [],
+  upcomingCourses: [
+    {
+      name: "DevOps with Docker",
+      description: "Learn the basics of modern software deployment in this introductory course to Docker and docker-compose. Course will also look into what different parts web services consist of such as reverse proxies, databases etc.",
+    },
+  ],
   pasCourses: [],
 };
 
