@@ -87,7 +87,7 @@ export const finnishCourses = {
     {
       name: "Full stack open 2019",
       description:
-        "Syväsukellus moderniin websovelluskehitykseen — ota haltuusi React, Redux, Node.js ja MongoDB! Kurssi alkaa 15.3. ja päättyy 15.12.",
+        "Syväsukellus moderniin websovelluskehitykseen — ota haltuusi React, Redux, Node.js, GraphQL ja MongoDB! Kurssi alkaa 15.3. ja päättyy 15.12.",
       image: FullStackImage,
     },
     {
