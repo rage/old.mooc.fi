@@ -1,4 +1,5 @@
 import AiImage from "../images/ai.png";
+import ContainerImage from "../images/containers.png"
 import FullStackImage from "../images/fullstack.2.png";
 import NoIdeaDogImage from "../images/no-idea-dog.png";
 import NoIdeaDogImageRotated from "../images/no-idea-dog-rotated.png";
@@ -41,7 +42,13 @@ export const englishCourses = {
       href: "http://moocfi.github.io/courses/2013/programming-part-2/",
     },
   ],
-  upcomingCourses: [],
+  upcomingCourses: [
+    {
+      name: "DevOps with Docker",
+      description: "Learn the basics of modern software deployment in this introductory course to Docker and docker-compose. Also what different parts web services consist of such as reverse proxies, databases etc.",
+      image: ContainerImage
+    },
+  ],
   pasCourses: [],
 };
 
@@ -107,6 +114,11 @@ export const finnishCourses = {
       description:
         "Mitä tietokoneet ovat ja miten ne toimivat? Opi alkeet millaisista osista ja toiminnallisuuksista nämä meille elintärkeät laitteet koostuvat.",
       image: TitoImage,
+    },
+    {
+      name: "DevOps with Docker",
+      description: "Miten sovellusten käyttöönotto tapahtuu nykyään? Tällä kurssilla tutustutaan Dockeriin ja docker-composeen. Samalla opit monista erilaisista osista joista webpalvelut koostuvat.",
+      image: ContainerImage
     },
   ],
   pastCourses: [
