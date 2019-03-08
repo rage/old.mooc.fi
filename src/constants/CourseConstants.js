@@ -77,6 +77,13 @@ export const finnishCourses = {
       href: "https://tietokantojen-perusteet-19.mooc.fi/",
     },
     {
+      name: "Web-palvelinohjelmointi Java",
+      description:
+        "Java-kielisten web-sovellusten toteutus tutuksi. Opi mm. Spring sovelluskehyksen periaatteet.Kurssi on käynnissä. Ensimmäisen osan tehtävien deadline on 18.3. Kurssi päättyy 10.5.",
+      image: WepaImage,
+      href: "https://web-palvelinohjelmointi-19.mooc.fi/"
+    },
+    {
       name: "Cyber Security Base",
       description:
         "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional. Starts on October 29th.",
@@ -85,12 +92,6 @@ export const finnishCourses = {
     },
   ],
   upcomingCourses: [
-    {
-      name: "Web-palvelinohjelmointi Java",
-      description:
-        "Java-kielisten web-sovellusten toteutus tutuksi. Opi mm. Spring sovelluskehyksen periaatteet. Kurssi alkaa 8.3. ja päättyy 10.5.",
-      image: WepaImage,
-    },
     {
       name: "Full stack open 2019",
       description:
