@@ -118,7 +118,7 @@ export const finnishCourses = {
     },
     {
       name: "DevOps with Docker",
-      description: "Miten sovellusten käyttöönotto tapahtuu nykyään? Tällä kurssilla tutustutaan Dockeriin ja docker-composeen. Samalla opit monista erilaisista osista joista webpalvelut koostuvat.",
+      description: "Miten sovellusten käyttöönotto tapahtuu nykyään? Tällä kurssilla tutustutaan Dockeriin ja docker-composeen. Samalla opit monista erilaisista osista joista webpalvelut koostuvat. Kurssi alkaa 15.4.",
       image: ContainerImage
     },
   ],
