@@ -90,14 +90,15 @@ export const finnishCourses = {
       image: CyberImage,
       href: "https://cybersecuritybase.mooc.fi",
     },
-  ],
-  upcomingCourses: [
     {
       name: "Full stack open 2019",
       description:
         "Syväsukellus moderniin websovelluskehitykseen — ota haltuusi React, Redux, Node.js, GraphQL ja MongoDB! Kurssi alkaa 15.3. ja päättyy 15.12.",
       image: FullStackImage,
+      href: "https://fullstack-hy2019.github.io/",
     },
+  ],
+  upcomingCourses: [
     {
       name: "Tietorakenteet ja algoritmit",
       description:
