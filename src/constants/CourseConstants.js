@@ -62,6 +62,13 @@ export const finnishCourses = {
       href: "https://ohjelmointi-19.mooc.fi/",
     },
     {
+      name: "Full stack open 2019",
+      description:
+        "Syväsukellus moderniin websovelluskehitykseen — ota haltuusi React, Redux, Node.js, GraphQL ja MongoDB! Kurssi alkaa 15.3. ja päättyy 15.12.",
+      image: FullStackImage,
+      href: "https://fullstack-hy2019.github.io/",
+    },
+    {
       name: "Elements of AI",
       description:
         "Vievätkö robotit työmme? Miten tekoäly muuttaa työelämää seuraavan 10 vuoden aikana? Millainen yhteiskunnallinen vaikutus tekoälyllä on?",
@@ -89,13 +96,6 @@ export const finnishCourses = {
         "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional. Starts on October 29th.",
       image: CyberImage,
       href: "https://cybersecuritybase.mooc.fi",
-    },
-    {
-      name: "Full stack open 2019",
-      description:
-        "Syväsukellus moderniin websovelluskehitykseen — ota haltuusi React, Redux, Node.js, GraphQL ja MongoDB! Kurssi alkaa 15.3. ja päättyy 15.12.",
-      image: FullStackImage,
-      href: "https://fullstack-hy2019.github.io/",
     },
   ],
   upcomingCourses: [
