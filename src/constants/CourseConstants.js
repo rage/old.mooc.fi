@@ -66,7 +66,7 @@ export const finnishCourses = {
       description:
         "Syväsukellus moderniin websovelluskehitykseen — ota haltuusi React, Redux, Node.js, GraphQL ja MongoDB! Kurssi alkaa 15.3. ja päättyy 15.12.",
       image: FullStackImage,
-      href: "https://fullstack-hy2019.github.io/",
+      href: "https://fullstackopen-2019.github.io/",
     },
     {
       name: "Elements of AI",
@@ -76,19 +76,18 @@ export const finnishCourses = {
       href: "https://www.elementsofai.com/fi",
     },
     {
-      name: "Tietokantojen perusteet",
-      description:
-        "Miten tietokannat toimivat? Opi SQL-kielen perusteet, relaatietokantojen suunnittelun ja käytön, sekä tietokantaa käyttävien ohjelmistojen perusteet. Ilmoittautuminen käynnissä.",
-      image: TikapeImage,
-      disabled: false,
-      href: "https://tietokantojen-perusteet-19.mooc.fi/",
-    },
-    {
       name: "Web-palvelinohjelmointi Java",
       description:
         "Java-kielisten web-sovellusten toteutus tutuksi. Opi mm. Spring sovelluskehyksen periaatteet.Kurssi on käynnissä. Ensimmäisen osan tehtävien deadline on 18.3. Kurssi päättyy 10.5.",
       image: WepaImage,
       href: "https://web-palvelinohjelmointi-19.mooc.fi/"
+    },
+    {
+      name: "Johdatus tietoliikenteeseen",
+      description:
+        "Miten internet toimii? Opi miten tietokoneet, puhelimet ja palvelimet keskustelevat verkon yli. Mitä ovat reitittimet ja kytkimet?",
+      image: TilpeImage,
+      href: "https://johdatus-tietoliikenteeseen-19.mooc.fi/",
     },
     {
       name: "Cyber Security Base",
@@ -104,12 +103,6 @@ export const finnishCourses = {
       description:
         "Osaat jo ohjelmoida mutta haluat kehittyä lisää. Opi suunnittelemaan tehokkaita algoritmeja, joilla voit ratkaista kinkkisiä ongelmia salamannopeasti.",
       image: TiraImage,
-    },
-    {
-      name: "Tietoliikenteen perusteet",
-      description:
-        "Miten internet toimii? Opi miten tietokoneet, puhelimet ja palvelimet keskustelevat verkon yli. Mitä ovat reitittimet ja kytkimet?",
-      image: TilpeImage,
     },
     {
       name: "Tietokoneen toiminnan perusteet",
@@ -132,11 +125,12 @@ export const finnishCourses = {
       href: "http://moocfi.github.io/courses/2018/ohjelmoinnin-mooc/",
     },
     {
-      name: "Full stack open 2018",
+      name: "Tietokantojen perusteet",
       description:
-        "Syväsukellus moderniin websovelluskehitykseen — ota haltuusi React, Redux, Node.js ja MongoDB! Pääpaino on Reactilla tehdyissä single page -sovelluksissa.",
-      image: FullStackImage,
-      href: "http://moocfi.github.io/courses/2018/fullstack/",
+        "Miten tietokannat toimivat? Opi SQL-kielen perusteet, relaatietokantojen suunnittelun ja käytön, sekä tietokantaa käyttävien ohjelmistojen perusteet.",
+      image: TikapeImage,
+      disabled: false,
+      href: "https://tietokantojen-perusteet-19.mooc.fi/",
     },
   ],
 };
