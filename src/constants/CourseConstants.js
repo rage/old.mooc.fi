@@ -45,8 +45,14 @@ export const englishCourses = {
   upcomingCourses: [
     {
       name: "DevOps with Docker",
-      description: "Learn the basics of modern software deployment in this introductory course to Docker and docker-compose. Also what different parts web services consist of such as reverse proxies, databases etc.",
+      description: "Learn the basics of modern software deployment in this introductory course to Docker and docker-compose. Explore different parts of web services, such as reverse proxies, databases etc. Begins 15.4.",
       image: ContainerImage
+    },
+    {
+      name: "Full stack open 2019",
+      description:
+        "Deep dive into modern web development — learn to master React, Redux, Node.js, GraphQL and MongoDB! The course will be launched 3rd June.",
+      image: FullStackImage,
     },
   ],
   pasCourses: [],
