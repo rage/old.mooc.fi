@@ -12,6 +12,9 @@ const Account = loadable(() => import("./pages/Account"));
 const Redirector = loadable(() => import("./pages/Redirector"));
 const TeacherGuide = loadable(() => import("./pages/TeacherGuide"));
 const NotFoundPage = loadable(() => import("./pages/404"));
+const RegisterCompletionPage = loadable(() =>
+  import("./pages/RegisterCompletion")
+);
 
 initGa(history);
 
@@ -29,6 +32,14 @@ export default () => (
         <Route exact path="/account" component={Account} />
         <Route exact path="/teachers" component={TeacherGuide} />
         <Route exact path="/404" component={NotFoundPage} />
+        <Route
+          path="/register-completion/:course_slug"
+          component={RegisterCompletionPage}
+        />
+        <Route
+          path="/en/register-completion/:course_slug"
+          component={withContext(RegisterCompletionPage, languages.english)}
+        />
         <Route
           exact
           path="/en/account"

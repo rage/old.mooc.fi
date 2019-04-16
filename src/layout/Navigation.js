@@ -55,7 +55,7 @@ class MenuAppBar extends React.Component {
             <Grower>
               <Logo />
             </Grower>
-            <LanguageSelector />
+            {this.props.showLanguageToggle && <LanguageSelector />}
             {/* {auth && (
               <div>
                 <NavigationButton

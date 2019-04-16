@@ -21,14 +21,14 @@ const Push = styled.div`
   height: ${FOOTER_HEIGHT};
 `;
 
-export default Component => {
+export default (Component, showLanguageToggle = true) => {
   class Layout extends React.Component {
     render() {
       return (
         <Fragment>
-          <Navigation />
+          <Navigation showLanguageToggle={showLanguageToggle} />
           <Content>
-            <Component />
+            <Component {...this.props} />
             <Push />
           </Content>
           <Footer />

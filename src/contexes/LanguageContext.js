@@ -14,7 +14,7 @@ export const withContext = (Children, language) => {
     render() {
       return (
         <LanguageContext.Provider value={language}>
-          <Children />
+          <Children {...this.props} />
         </LanguageContext.Provider>
       );
     }
