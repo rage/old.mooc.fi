@@ -41,13 +41,14 @@ export const englishCourses = {
       image: GuideDogImage,
       href: "http://moocfi.github.io/courses/2013/programming-part-2/",
     },
-  ],
-  upcomingCourses: [
     {
       name: "DevOps with Docker",
-      description: "Learn the basics of modern software deployment in this introductory course to Docker and docker-compose. Explore different parts of web services, such as reverse proxies, databases etc. Begins 15.4.",
-      image: ContainerImage
+      description: "Learn the basics of modern software deployment in this introductory course to Docker and docker-compose. Explore different parts of web services, such as reverse proxies, databases etc.",
+      image: ContainerImage,
+      href: "https://docker-hy.github.io/"
     },
+  ],
+  upcomingCourses: [
     {
       name: "Full stack open 2019",
       description:
@@ -102,6 +103,12 @@ export const finnishCourses = {
       image: CyberImage,
       href: "https://cybersecuritybase.mooc.fi",
     },
+    {
+      name: "DevOps with Docker",
+      description: "Miten sovellusten käyttöönotto tapahtuu nykyään? Tällä kurssilla tutustutaan Dockeriin ja docker-composeen. Samalla opit monista erilaisista osista joista webpalvelut koostuvat.",
+      image: ContainerImage,
+      href: "https://docker-hy.github.io/"
+    },
   ],
   upcomingCourses: [
     {
@@ -115,11 +122,6 @@ export const finnishCourses = {
       description:
         "Mitä tietokoneet ovat ja miten ne toimivat? Opi alkeet millaisista osista ja toiminnallisuuksista nämä meille elintärkeät laitteet koostuvat.",
       image: TitoImage,
-    },
-    {
-      name: "DevOps with Docker",
-      description: "Miten sovellusten käyttöönotto tapahtuu nykyään? Tällä kurssilla tutustutaan Dockeriin ja docker-composeen. Samalla opit monista erilaisista osista joista webpalvelut koostuvat. Kurssi alkaa 15.4.",
-      image: ContainerImage
     },
   ],
   pastCourses: [
