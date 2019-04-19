@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import Router from "./Router";
-import registerServiceWorker from "./registerServiceWorker";
 
 import trackHeight from "./util/trackHeight";
 import NewContentPopup from "./components/NewContentPopup";
+import { unregister } from "./registerServiceWorker";
 
 export default class App extends React.Component {
   state = {
@@ -11,8 +11,8 @@ export default class App extends React.Component {
   };
 
   componentDidMount() {
-    registerServiceWorker(this.onUpdateAvailable);
     trackHeight();
+    unregister()
   }
 
   onUpdateAvailable = () => {

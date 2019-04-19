@@ -5,8 +5,11 @@ import App from "./App";
 
 import "typeface-roboto";
 import "typeface-open-sans-condensed";
+import { unregister } from "./registerServiceWorker";
 
 window.snapSaveState = () => getState();
+
+unregister()
 
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
