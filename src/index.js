@@ -9,7 +9,12 @@ import { unregister } from "./registerServiceWorker";
 
 window.snapSaveState = () => getState();
 
-unregister()
+unregister();
+try {
+  unregisterAndClearCaches();
+} catch (e) {
+  console.error(e);
+}
 
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
@@ -18,4 +23,16 @@ if (rootElement.hasChildNodes()) {
   });
 } else {
   render(<App />, rootElement);
+}
+
+async function unregisterAndClearCaches() {
+  const registrations = await navigator.serviceWorker.getRegistrations();
+  const unregisterPromises = registrations.map(registration =>
+    registration.unregister()
+  );
+
+  const allCaches = await caches.keys();
+  const cacheDeletionPromises = allCaches.map(cache => caches.delete(cache));
+
+  await Promise.all([...unregisterPromises, ...cacheDeletionPromises]);
 }
