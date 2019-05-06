@@ -109,6 +109,14 @@ export const finnishCourses = {
       image: ContainerImage,
       href: "https://docker-hy.github.io/"
     },
+    {
+      name: "Tietokantojen perusteet",
+      description:
+        "Miten tietokannat toimivat? Opi SQL-kielen perusteet, relaatietokantojen suunnittelun ja käytön, sekä tietokantaa käyttävien ohjelmistojen perusteet. Ilmoittautuminen on jo käynnissä, itse kurssi alkaa 9.5.",
+      image: TikapeImage,
+      disabled: false,
+      href: "https://tietokantojen-perusteet-19.mooc.fi/",
+    },
   ],
   upcomingCourses: [
     {
@@ -131,14 +139,6 @@ export const finnishCourses = {
         "Ohjelmointia Javalla perusteista lähtien sekä mahdollisuus opinto-oikeuteen. Täydellinen kurssi ohjelmoinnin alkeiden opetteluun. Ei vaadi esitietoja.",
       image: NoIdeaDogImage,
       href: "http://moocfi.github.io/courses/2018/ohjelmoinnin-mooc/",
-    },
-    {
-      name: "Tietokantojen perusteet",
-      description:
-        "Miten tietokannat toimivat? Opi SQL-kielen perusteet, relaatietokantojen suunnittelun ja käytön, sekä tietokantaa käyttävien ohjelmistojen perusteet.",
-      image: TikapeImage,
-      disabled: false,
-      href: "https://tietokantojen-perusteet-19.mooc.fi/",
     },
   ],
 };
