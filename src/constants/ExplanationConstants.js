@@ -12,7 +12,7 @@ export const finnishExplanations = {
       shortDescription:
         "Verkko-oppimista parhaillaan. Älä huolehdi kurssimaksuista tai koulumatkoista, vaan opiskele missä sinulle sopii.",
       longDescription:
-        "MOOCit eli kaikille avoimet verkkokurssit (massive open online course) ovat nimensä mukaisesti kaikki kurssit ovat avoimia, ilmaisia ja verkkopohjaisia.",
+        "MOOCit eli kaikille avoimet verkkokurssit (Massive Open Online Course) ovat nimensä mukaisesti kaikki kurssit ovat avoimia, ilmaisia ja verkkopohjaisia.",
       icon: MoocIcon
     },
     {
@@ -49,7 +49,7 @@ export const englishExplanations = {
       shortDescription:
         "Online learning at its best. Don't worry about course fees or trips to learning facilities. Study where it is convenient for you!",
       longDescription:
-        "As per their name, MOOCs (Massive Online Open Course) are all open, free of charge, and fully available online.",
+        "As per their name, MOOCs (Massive Open Online Course) are all open, free of charge, and fully available online.",
       icon: MoocIcon
     },
     {
