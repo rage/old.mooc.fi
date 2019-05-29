@@ -75,7 +75,7 @@ export const finnishCourses = {
       description:
         "Syväsukellus moderniin websovelluskehitykseen — ota haltuusi React, Redux, Node.js, GraphQL ja MongoDB! Kurssi alkaa 15.3. ja päättyy 15.12.",
       image: FullStackImage,
-      href: "https://fullstackopen-2019.github.io/",
+      href: "href: "https://fullstackopen.com/",
     },
     {
       name: "Elements of AI",
