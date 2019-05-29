@@ -16,7 +16,7 @@ export const englishCourses = {
     {
       name: "Full stack open 2019",
       description:
-        "Deep dive into modern web development — learn to master React, Redux, Node.js, GraphQL and MongoDB! The course will be launched 3rd June.",
+        "Deep dive into modern web development — learn to master React, Redux, Node.js, GraphQL and MongoDB!",
       image: FullStackImage,
       href: "https://fullstackopen.com/en/"
     },    
