@@ -14,18 +14,18 @@ import WepaImage from "../images/wepa.jpg";
 export const englishCourses = {
   ongoingCourses: [
     {
+      name: "Full stack open 2019",
+      description:
+        "Deep dive into modern web development — learn to master React, Redux, Node.js, GraphQL and MongoDB! The course will be launched 3rd June.",
+      image: FullStackImage,
+      href: "https://fullstackopen.com/en/"
+    },    
+    {
       name: "Elements of AI",
       description:
         "Will robots take our jobs? How will artificial intelligence change our working life in the next 10 years? How will intelligence impact our society?",
       image: AiImage,
       href: "https://www.elementsofai.com/",
-    },
-    {
-      name: "Cyber Security Base",
-      description:
-        "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional. Starts on October 29th.",
-      image: CyberImage,
-      href: "https://cybersecuritybase.mooc.fi",
     },
     {
       name: "2013 Programming with Java I",
@@ -49,14 +49,16 @@ export const englishCourses = {
     },
   ],
   upcomingCourses: [
-    {
-      name: "Full stack open 2019",
-      description:
-        "Deep dive into modern web development — learn to master React, Redux, Node.js, GraphQL and MongoDB! The course will be launched 3rd June.",
-      image: FullStackImage,
-    },
   ],
-  pasCourses: [],
+  pasCourses: [
+    {
+      name: "Cyber Security Base",
+      description:
+        "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional. Starts on October 29th.",
+      image: CyberImage,
+      href: "https://cybersecuritybase.mooc.fi",
+    },  
+  ],
 };
 
 export const finnishCourses = {
