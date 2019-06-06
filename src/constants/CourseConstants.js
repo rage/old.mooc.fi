@@ -19,7 +19,7 @@ export const englishCourses = {
         "Deep dive into modern web development — learn to master React, Redux, Node.js, GraphQL and MongoDB!",
       image: FullStackImage,
       href: "https://fullstackopen.com/en/"
-    },    
+    },
     {
       name: "Elements of AI",
       description:
@@ -49,15 +49,14 @@ export const englishCourses = {
     },
   ],
   upcomingCourses: [
-  ],
-  pasCourses: [
     {
       name: "Cyber Security Base",
       description:
-        "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional. Starts on October 29th.",
+        "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional. Starts on October 28th.",
       image: CyberImage,
-      href: "https://cybersecuritybase.mooc.fi",
-    },  
+    },
+  ],
+  pastCourses: [
   ],
 };
 
@@ -99,13 +98,6 @@ export const finnishCourses = {
       href: "https://johdatus-tietoliikenteeseen-19.mooc.fi/",
     },
     {
-      name: "Cyber Security Base",
-      description:
-        "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional. Starts on October 29th.",
-      image: CyberImage,
-      href: "https://cybersecuritybase.mooc.fi",
-    },
-    {
       name: "DevOps with Docker",
       description: "Miten sovellusten käyttöönotto tapahtuu nykyään? Tällä kurssilla tutustutaan Dockeriin ja docker-composeen. Samalla opit monista erilaisista osista joista webpalvelut koostuvat.",
       image: ContainerImage,
@@ -132,6 +124,12 @@ export const finnishCourses = {
       description:
         "Mitä tietokoneet ovat ja miten ne toimivat? Opi alkeet millaisista osista ja toiminnallisuuksista nämä meille elintärkeät laitteet koostuvat.",
       image: TitoImage,
+    },
+    {
+      name: "Cyber Security Base",
+      description:
+        "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional. Starts on October 28th.",
+      image: CyberImage,
     },
   ],
   pastCourses: [
