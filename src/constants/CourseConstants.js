@@ -57,6 +57,13 @@ export const englishCourses = {
     },
   ],
   pastCourses: [
+    {
+      name: "Cyber Security Base (2018)",
+      description:
+        "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional.",
+      image: CyberImage,
+      href: "https://cybersecuritybase.mooc.fi/",
+    },
   ],
 };
 
@@ -139,6 +146,13 @@ export const finnishCourses = {
         "Ohjelmointia Javalla perusteista lähtien sekä mahdollisuus opinto-oikeuteen. Täydellinen kurssi ohjelmoinnin alkeiden opetteluun. Ei vaadi esitietoja.",
       image: NoIdeaDogImage,
       href: "http://moocfi.github.io/courses/2018/ohjelmoinnin-mooc/",
+    },
+    {
+      name: "Cyber Security Base (2018)",
+      description:
+        "Become a cyber security professional. Cyber Security Base focuses on building core knowledge and abilities related to the work of a cyber security professional.",
+      image: CyberImage,
+      href: "https://cybersecuritybase.mooc.fi/",
     },
   ],
 };
