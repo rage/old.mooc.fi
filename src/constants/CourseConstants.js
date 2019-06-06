@@ -10,6 +10,7 @@ import TilpeImage from "../images/tilpe.png";
 import TikapeImage from "../images/tikape.jpg";
 import TitoImage from "../images/tietokoneen-toiminnan-perusteet.jpg";
 import WepaImage from "../images/wepa.jpg";
+import DapImage from "../images/dap.jpg";
 
 export const englishCourses = {
   ongoingCourses: [
@@ -49,6 +50,12 @@ export const englishCourses = {
     },
   ],
   upcomingCourses: [
+    {
+      name: "Data Analysis with Python",
+      description:
+        "Course gives a practical introduction to data analysis using a large number of programming exercises and a project delving into the realm of a selected field of science. Starts on June 19th.",
+      image: DapImage,
+    },    
     {
       name: "Cyber Security Base",
       description:
@@ -120,6 +127,12 @@ export const finnishCourses = {
     },
   ],
   upcomingCourses: [
+    {
+      name: "Data Analysis with Python",
+      description:
+        "Course gives a practical introduction to data analysis using a large number of programming exercises and a project delving into the realm of a selected field of science. Starts on June 19th.",
+      image: DapImage,
+    },    
     {
       name: "Tietorakenteet ja algoritmit",
       description:
