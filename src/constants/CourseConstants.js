@@ -43,6 +43,13 @@ export const englishCourses = {
       href: "http://moocfi.github.io/courses/2013/programming-part-2/",
     },
     {
+      name: "Data Analysis with Python",
+      description:
+        "Course gives a practical introduction to data analysis using a large number of programming exercises and a project delving into the realm of a selected field of science. Starts on June 19th.",
+      image: DapImage,
+      href: "https://courses.helsinki.fi/en/aycsm90004en/129660063",
+    },
+    {
       name: "DevOps with Docker",
       description: "Learn the basics of modern software deployment in this introductory course to Docker and docker-compose. Explore different parts of web services, such as reverse proxies, databases etc.",
       image: ContainerImage,
@@ -50,12 +57,6 @@ export const englishCourses = {
     },
   ],
   upcomingCourses: [
-    {
-      name: "Data Analysis with Python",
-      description:
-        "Course gives a practical introduction to data analysis using a large number of programming exercises and a project delving into the realm of a selected field of science. Starts on June 19th.",
-      image: DapImage,
-    },    
     {
       name: "Cyber Security Base",
       description:
@@ -98,6 +99,13 @@ export const finnishCourses = {
       href: "https://www.elementsofai.com/fi",
     },
     {
+      name: "Data Analysis with Python",
+      description:
+        "Course gives a practical introduction to data analysis using a large number of programming exercises and a project delving into the realm of a selected field of science. Starts on June 19th.",
+      image: DapImage,
+      href: "https://courses.helsinki.fi/en/aycsm90004en/129660063",
+    },
+    {
       name: "Web-palvelinohjelmointi Java",
       description:
         "Java-kielisten web-sovellusten toteutus tutuksi. Opi mm. Spring sovelluskehyksen periaatteet.Kurssi on käynnissä. Ensimmäisen osan tehtävien deadline on 18.3. Kurssi päättyy 10.5.",
@@ -127,12 +135,6 @@ export const finnishCourses = {
     },
   ],
   upcomingCourses: [
-    {
-      name: "Data Analysis with Python",
-      description:
-        "Course gives a practical introduction to data analysis using a large number of programming exercises and a project delving into the realm of a selected field of science. Starts on June 19th.",
-      image: DapImage,
-    },    
     {
       name: "Tietorakenteet ja algoritmit",
       description:
